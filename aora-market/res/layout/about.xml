@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.ChildTitleView android:id="@+id/aboutTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:background="@drawable/about_icon" android:layout_width="108.0dip" android:layout_height="143.0dip" android:layout_marginTop="20.0dip" />
+            <TextView android:textSize="17.0dip" android:textColor="#ff626262" android:layout_gravity="center" android:id="@+id/about_versions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="v4.60版本" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/about_tel_icon" android:background="@drawable/about_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="17.0dip" android:textColor="#ff519d35" android:id="@+id/about_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4007705518" />
+                            <ImageView android:background="#ff519d35" android:layout_width="fill_parent" android:layout_height="2.0px" />
+                        </LinearLayout>
+                        <TextView android:textSize="12.0dip" android:textColor="#ff525252" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="客服电话(400电话按当地市话标准收费)" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:background="@drawable/about_mail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:id="@+id/about_mail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="#ff519d35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="support@aoratec.com" />
+                        <ImageView android:background="#ff519d35" android:layout_width="fill_parent" android:layout_height="2.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@+id/about_qq_icon" android:background="@drawable/about_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="#ff519d35" android:id="@+id/about_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="326889619(官方Q群)" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ff525252" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击复制用户QQ群号码" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@+id/about_weibo" android:background="@drawable/about_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="17.0dip" android:textColor="#ff519d35" android:textColorLink="#ff519d35" android:id="@+id/about_weibo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/about_weibo" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@+id/about_weixin_icon" android:background="@drawable/weixin_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <TextView android:textSize="17.0dip" android:textColor="#ff519d35" android:id="@+id/about_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金立易用汇" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ff525252" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击复制微信号" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" android:layout_marginBottom="4.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="http://www.anzhuoapk.com" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_adress" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/black" android:gravity="center" android:id="@+id/about_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_des" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="网络文化许可证:粤网文[2012]0627-98号" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

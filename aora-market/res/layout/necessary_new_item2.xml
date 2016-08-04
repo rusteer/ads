@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/soft_item_height" android:minHeight="@dimen/soft_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@+id/necessary_new_item_top_split_line" android:background="@drawable/driver_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/rank_list_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="11.299988dip" android:src="@drawable/cp_defaulf" android:layout_centerVertical="true" />
+        <com.gionee.aora.market.gui.download.view.DownloadProgress android:textSize="12.0dip" android:gravity="center" android:id="@+id/rank_list_button" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@+id/rank_list_button" android:layout_toRightOf="@+id/rank_list_icon" android:layout_centerInParent="true">
+            <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@+id/rank_list_appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AppName" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@+id/rank_list_button" android:layout_toRightOf="@+id/rank_list_icon" android:layout_below="@id/rank_list_appName">
+                <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:id="@+id/rank_list_downloadRegion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10000次下载" />
+                <View android:id="@+id/rank_list_line" android:background="#ff999999" android:layout_width="1.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" />
+                <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:id="@+id/rank_list_packageSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="10.00MB" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

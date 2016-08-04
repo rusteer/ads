@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ff5c5c5c" android:gravity="center" android:id="@+id/email_daialog_btn1" android:background="@drawable/exit_dialog_tvbg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/email_dialog_quit" android:layout_weight="2.0" />
+    <View android:background="#ffc9c9c9" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff5c5c5c" android:gravity="center" android:id="@+id/email_daialog_btn2" android:background="@drawable/exit_dialog_tvbg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/email_dialog_redo" android:layout_weight="3.0" />
+    <View android:background="#ffc9c9c9" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff5c5c5c" android:gravity="center" android:id="@+id/email_daialog_btn3" android:background="@drawable/exit_dialog_tvbg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/email_dialog_ok" android:layout_weight="3.0" />
+</LinearLayout>

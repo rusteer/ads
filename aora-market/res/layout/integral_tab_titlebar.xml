@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@+id/tab_hor_list" android:background="#ffe9e9e9" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tab_title_content" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.gionee.aora.integral.gui.view.tabview.UnderlinePageIndicator android:id="@+id/indicator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

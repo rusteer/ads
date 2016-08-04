@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="#ff444444" android:id="@+id/group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="影音视频" android:layout_toRightOf="@+id/leftGreenBar" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/leftGreenBar" android:background="@drawable/green_bar" android:layout_width="5.5999756dip" android:layout_height="2.0dip" android:layout_centerVertical="true" />
+    <ImageView android:background="@drawable/green_bar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_toRightOf="@+id/group_title" android:layout_centerVertical="true" />
+</RelativeLayout>

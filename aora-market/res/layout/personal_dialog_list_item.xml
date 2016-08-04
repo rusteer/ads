@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/dip60" android:minHeight="@dimen/dip60"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/icon" android:layout_width="@dimen/dip50" android:layout_height="@dimen/dip50" android:layout_centerVertical="true" />
+    <com.gionee.aora.market.gui.download.view.DownloadProgress android:textSize="12.0dip" android:gravity="center" android:id="@+id/down_btn" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@+id/down_btn" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名字" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/gray" android:id="@+id/app_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5" android:text="49.5MB|3820万次下载" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="@dimen/px1" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/game_table_list" android:background="@drawable/prefecture_background" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    <com.gionee.aora.market.gui.view.MyViewPager android:id="@+id/game_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

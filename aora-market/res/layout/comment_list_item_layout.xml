@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="6.5999756dip" android:layout_marginRight="6.5999756dip" android:minHeight="54.0dip">
+        <Button android:textSize="17.0dip" android:textColor="@*android:color/white" android:id="@+id/allCommentButton" android:background="@drawable/soft_introduction_download_selector" android:layout_width="0.0dip" android:layout_height="37.0dip" android:text="所有评论" android:layout_weight="1.0" />
+        <Button android:textSize="17.0dip" android:textColor="@*android:color/white" android:id="@+id/commnetButton" android:background="@drawable/soft_introduction_all_comment_selector" android:layout_width="0.0dip" android:layout_height="37.0dip" android:layout_marginLeft="10.0dip" android:text="安装后才能评论哦" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

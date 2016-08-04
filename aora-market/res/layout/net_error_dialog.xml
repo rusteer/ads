@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="#ff5c5c5c" android:id="@+id/net_error_dialog_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="      现在没有网络也能升级哟,已有7个应用备好安装包,共节省流量50MB" />
+    <ListView android:id="@+id/net_error_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:listSelector="@*android:color/transparent" android:cacheColorHint="#00000000" android:divider="@drawable/net_work_dialog_diver" android:dividerHeight="1.0px" />
+</LinearLayout>

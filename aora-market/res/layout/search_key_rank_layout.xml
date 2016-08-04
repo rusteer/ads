@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/search_rank_subject_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="6.5999756dip" android:layout_marginTop="7.0999756dip" android:layout_marginRight="6.5999756dip">
+                <com.gionee.aora.market.gui.view.LoadingNewView2 android:id="@+id/progressBar2" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <TextView android:textColor="#ff464646" android:id="@+id/errorText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="加载失败" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/keyLinearLayout" android:background="@drawable/search_layout_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.299988dip" android:layout_marginTop="7.299988dip" android:layout_marginRight="5.299988dip" />
+            <LinearLayout android:gravity="center" android:id="@+id/search_rank_app_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:minHeight="50.0dip">
+                <com.gionee.aora.market.gui.view.LoadingNewView2 android:id="@+id/progressBar1" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

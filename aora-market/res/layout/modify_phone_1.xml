@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <TextView android:textSize="16.699982dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您目前使用的手机号" />
+        <TextView android:textSize="16.699982dip" android:textColor="@color/black" android:id="@+id/curr_phone_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" />
+        <TextView android:textSize="16.699982dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="您的密码：" />
+        <EditText android:enabled="true" android:textSize="13.299988dip" android:textColorHint="@color/hint_text_color" android:id="@+id/unbundle_num" android:background="@drawable/bord_black" android:paddingLeft="11.699982dip" android:layout_width="fill_parent" android:layout_height="@dimen/dip47" android:layout_marginTop="5.0dip" android:password="true" android:singleLine="true" android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" />
+        <Button android:textSize="24.0dip" android:textColor="@color/white" android:id="@+id/unbundle_ok" android:background="@drawable/btn_green_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip53" android:layout_marginTop="50.0dip" android:text="下一步" />
+        <TextView android:textSize="13.0dip" android:textColor="#ffff7200" android:id="@+id/erro_tips1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="*请输入密码" android:layout_below="@id/unbundle_num" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/soft_item_height" android:minHeight="@dimen/soft_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/softlist_new_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="11.299988dip" android:src="@drawable/cp_defaulf" android:layout_centerVertical="true" />
+        <com.gionee.aora.market.gui.download.view.DownloadProgress android:textSize="12.0dip" android:gravity="center" android:id="@+id/softlist_new_button" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginTop="0.0dip" android:layout_toLeftOf="@+id/softlist_new_button" android:layout_toRightOf="@+id/softlist_new_icon">
+            <TextView android:textSize="@dimen/soft_item_name_size" android:textColor="@*android:color/black" android:id="@+id/softlist_new_appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AppName" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="11.0dip" android:textColor="@color/softlist_new_txt_color2" android:id="@+id/softlist_new_downloadRegion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10000次下载" />
+                <View android:id="@+id/softlist_new_line" android:background="@color/softlist_new_txt_color2" android:layout_width="1.0dip" android:layout_height="11.0dip" android:layout_marginLeft="8.0dip" android:layout_marginBottom="0.0dip" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/softlist_new_txt_color2" android:id="@+id/softlist_new_packageSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="10.00MB" />
+                <ImageView android:id="@+id/softlist_new_integral" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/manager_center_coin_large" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/softlist_new_txt_color" android:id="@+id/softlist_new_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/softlist_new_gionee_certify_iv" android:background="@drawable/special_list_gift_flag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

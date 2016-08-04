@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.MarketListView android:scrollbarStyle="outsideOverlay" android:id="@+id/marketListView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/DownloadLayout" />
+    <com.gionee.aora.market.gui.details.view.IntroductionDownloadLayout android:id="@+id/DownloadLayout" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="slide_bar_width">408.84375px</dimen>
+    <dimen name="slide_bar_height">65.5dip</dimen>
+    <dimen name="gradient_view_margin_left">0.0dip</dimen>
+    <dimen name="gradient_text_size">26.599976sp</dimen>
+</resources>

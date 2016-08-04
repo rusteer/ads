@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="89.29999dip" android:minHeight="89.29999dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:wei="http://schemas.android.com/apk/res/com.gionee.aora.market">
+    <com.gionee.aora.market.gui.view.CircleCornerImageView android:id="@+id/left_icon" android:layout_width="40.669983dip" android:layout_height="40.669983dip" android:layout_marginLeft="13.299988dip" android:layout_marginTop="17.0dip" android:layout_marginRight="13.299988dip" wei:borderWidth="1.0px" wei:borderColor="#ff666666" wei:type="circle" wei:src="@drawable/message_center_like_icon" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff8ac873" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/right_title" android:layout_width="65.0dip" android:layout_height="63.299988dip" android:layout_marginRight="13.299988dip" android:text="" android:maxLines="3" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/mid_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/right_title" android:layout_toRightOf="@+id/left_icon" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@+id/comment_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论人" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@+id/comment_text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:text="评论" />
+        </LinearLayout>
+        <TextView android:textSize="13.299988dip" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="评论内容" android:singleLine="true" />
+        <TextView android:textSize="10.669983dip" android:textColor="#ff999999" android:id="@+id/date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="2015-06-06 00:00" />
+    </LinearLayout>
+</RelativeLayout>

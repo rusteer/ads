@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.rot.repository.mybatis.DeviceRepositoryMyBatis">
+	<select id="getStat" parameterType="map" resultType="com.rot.entity.ActivateCount">
+		select  a.create_date as statDate,
+				count(1) as activateCount 
+		from device a 		
+		<where>
+			 a.create_date>=#{fromDate} 
+			<if test="toDate != null"><![CDATA[ and a.create_date <=#{toDate}]]></if>
+			<if test="systemApp != null"><![CDATA[ and a.system_app =#{systemApp}]]></if>		
+		</where>
+		group by statDate order by statDate desc
+	</select>
+</mapper>

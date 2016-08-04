@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/dialog_main" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/update_dialog_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="#ff519d35" android:gravity="center_vertical" android:id="@+id/title_tv" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="温馨提示" />
+        <View android:id="@+id/title_view_line" android:background="#ff8ac873" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/title_tv" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_1" android:background="@drawable/exit_dialog_tvbg" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0">
+                <requestFocus />
+            </TextView>
+            <View android:id="@+id/ver_divider_1" android:background="#ffc9c9c9" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_2" android:background="@drawable/exit_dialog_tvbg" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+            <View android:id="@+id/ver_divider_2" android:background="#ffc9c9c9" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_3" android:background="@drawable/exit_dialog_tvbg" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:id="@+id/bottom_line" android:background="#ffc9c9c9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_above="@+id/bottom_bar" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/center_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/bottom_line" android:layout_below="@id/title_view_line">
+            <TextView android:textSize="14.0dip" android:textColor="#ff5c5c5c" android:id="@+id/message_tv" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@id/title_view_line" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/baseCenterView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@+id/baseLoadingView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gionee.aora.integral.gui.view.LoadingView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/baseErrorView" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

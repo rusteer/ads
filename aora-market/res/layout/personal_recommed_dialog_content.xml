@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/dialog_main" android:background="@drawable/dialog_bg" android:layout_width="fill_parent" android:layout_height="@dimen/personal_recommend_dialog_height" android:layout_margin="3.0dip">
+        <RelativeLayout android:id="@+id/titlebar" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textColor="#ff525252" android:id="@+id/refresh_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="换一批" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="21.0dip" android:textColor="#ff519d35" android:gravity="center_vertical" android:id="@+id/title_tv" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="主人，你终于回来了" android:layout_toLeftOf="@+id/refresh_btn" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@+id/title_view_line" android:background="#ff8ac873" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/titlebar" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_bar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18.0dip" android:textColor="#ff5c5c5c" android:gravity="center" android:id="@+id/btn_1" android:background="@drawable/exit_dialog_tvbg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="去易用汇转转" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:id="@+id/bottom_line" android:background="#ffe2e2e2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.2999878dip" android:layout_above="@+id/bottom_bar" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/center_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/bottom_line" android:layout_below="@id/title_view_line">
+            <TextView android:textSize="18.0dip" android:textColor="#ff5c5c5c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="为你精心准备的应用，请过目。" />
+            <ListView android:id="@+id/listview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="280.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:divider="@null" android:dividerHeight="0.0px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

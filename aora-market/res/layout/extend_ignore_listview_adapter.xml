@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/ignore_infos_relay" android:background="@drawable/soft_update_button_selector" android:layout_width="fill_parent" android:layout_height="92.0dip">
+        <ImageView android:id="@+id/extend_ignore_list_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="18.599976dip" android:layout_marginTop="18.599976dip" android:src="@drawable/cp_defaulf" />
+        <ImageView android:id="@+id/ignore_spare_flow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spare_flow" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/software_ignore_information_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@+id/cancle_ignore_lay" android:layout_toRightOf="@+id/extend_ignore_list_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="@color/list_item_soft_version" android:id="@+id/ignore_software_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="易用汇" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:textColor="@color/list_item_soft_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本:" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/list_item_soft_version" android:ellipsize="end" android:id="@+id/ignore_software_cur_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="50.0dip" android:text="4.4" android:singleLine="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/point" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/list_item_soft_version" android:ellipsize="end" android:id="@+id/ignore_software_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="60.0dip" android:text="4.4" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:textColor="@color/list_item_soft_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大小:" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/list_item_soft_version" android:id="@+id/old_ignore_software_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="0.0M" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/list_item_soft_version" android:id="@+id/ignore_software_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="5.4M" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="12.0dip" android:textColor="@color/white" android:id="@+id/cancle_ignore_lay" android:background="@drawable/download_1_bg" android:layout_width="60.0dip" android:layout_height="@dimen/download_button_height" android:layout_marginRight="10.0dip" android:text="@string/cancle_ignore" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

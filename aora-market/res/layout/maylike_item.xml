@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/maylay_bg_layout" android:layout_width="70.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/maylike_icon" android:layout_width="@dimen/dip48" android:layout_height="@dimen/dip48" android:src="@drawable/cp_defaulf" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff272727" android:gravity="center" android:id="@+id/maylike_appname_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="鳄鱼小顽皮啊實打實大師" android:singleLine="true" />
+</LinearLayout>

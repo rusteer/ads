@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="preferences_front_light_values">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
+    <string-array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </string-array>
+    <string-array name="app_state_colors">
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#9c9c9c</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+        <item>\#519d35</item>
+    </string-array>
+    <string-array name="Gionee_model">
+        <item>GN105</item>
+        <item>GN106</item>
+        <item>GN109</item>
+        <item>GN170</item>
+        <item>GN180</item>
+        <item>GN205</item>
+        <item>GN210</item>
+        <item>GN380</item>
+        <item>GN777</item>
+    </string-array>
+    <string-array name="download_state">
+        <item>等 待</item>
+        <item>暂 停</item>
+        <item>继 续</item>
+        <item>安 装</item>
+        <item>重 试</item>
+        <item>安装中</item>
+        <item>安 装</item>
+        <item>打 开</item>
+        <item>安 装</item>
+        <item>安 装</item>
+        <item>下 载</item>
+        <item>打 开</item>
+        <item>更 新</item>
+    </string-array>
+    <string-array name="downloadstate">
+        <item>等待中</item>
+        <item>下载中</item>
+        <item>已暂停</item>
+        <item>已完成</item>
+        <item>下载出错</item>
+    </string-array>
+    <string-array name="integral_main_titles">
+        <item>应用大赏</item>
+        <item>每日抽奖</item>
+        <item>金币排行榜</item>
+        <item>兑换中心</item>
+        <item>淘金攻略</item>
+        <item>个人中心</item>
+    </string-array>
+</resources>

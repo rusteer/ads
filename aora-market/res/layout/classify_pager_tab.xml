@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/classify_pager_tab_content" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/classify_pager_tab_content2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.gionee.aora.market.gui.view.tabview.UnderlinePageIndicator android:id="@+id/under_line_block" android:layout_width="wrap_content" android:layout_height="3.0dip" />
+        <View android:layout_gravity="bottom" android:id="@+id/tab_title_line" android:background="#ffcecece" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</merge>

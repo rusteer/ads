@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/setting_point_update_time_radioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="12.0dip" android:textColor="#ff5d5d5d" android:id="@+id/setting_point_update_time_radioBtn1" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:button="@null" android:text="一天" android:drawableRight="@drawable/setting_radiobutton_selector" />
+        <View android:background="@color/manager_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <RadioButton android:textSize="12.0dip" android:textColor="#ff5d5d5d" android:id="@+id/setting_point_update_time_radioBtn2" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:button="@null" android:text="一周" android:drawableRight="@drawable/setting_radiobutton_selector" />
+        <View android:background="@color/manager_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <RadioButton android:textSize="12.0dip" android:textColor="#ff5d5d5d" android:id="@+id/setting_point_update_time_radioBtn3" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:button="@null" android:text="关闭" android:drawableRight="@drawable/setting_radiobutton_selector" />
+    </RadioGroup>
+    <View android:background="@color/manager_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    <LinearLayout android:gravity="center" android:id="@+id/setting_point_ok_btn" android:background="@drawable/game_gift_item_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff5d5d5d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

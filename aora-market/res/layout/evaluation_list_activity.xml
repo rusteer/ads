@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.MarketListView android:scrollbarStyle="outsideOverlay" android:id="@+id/evaluation_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:id="@+id/exercise_horn_btn" android:background="@drawable/event_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

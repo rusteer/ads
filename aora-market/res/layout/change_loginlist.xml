@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/person_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <ImageView android:id="@+id/change_portrait" android:layout_width="52.69998dip" android:layout_height="52.69998dip" android:layout_marginLeft="6.6999817dip" android:src="@drawable/change_image" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/change_portrait" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/ranktop" android:ellipsize="end" android:id="@+id/change_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.699982dip" android:text="游客" android:singleLine="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff525252" android:id="@+id/change_userid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/change_name" android:layout_alignLeft="@+id/change_name" />
+        </RelativeLayout>
+        <View android:id="@+id/change_line" android:background="@color/content_bg" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="6.6999817dip" android:layout_marginRight="6.6999817dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

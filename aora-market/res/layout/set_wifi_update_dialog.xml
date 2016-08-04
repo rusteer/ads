@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="#ff232323" android:id="@+id/update_dialog_msg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="    自动更新功能只在WLAN环境电量充足的情况下帮您更新软件，不会消耗您2G/3G/4G流量，免流量更新更省事！" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff868686" android:id="@+id/update_dialog_msg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="    *温馨提示，您可以在设置页面开启/关闭该功能" android:layout_below="@id/update_dialog_msg" />
+    <CheckBox android:textColor="#ff232323" android:id="@+id/update_dialog_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:checked="true" android:button="@drawable/joke_checkbox_selector" android:text="打开自动更新" android:layout_below="@id/update_dialog_msg2" />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.ads.repository.mybatis.AdsStatRepositoryMyBatis">
+	<select id="getDateStat" parameterType="map" resultType="com.ads.entity.AdsStatEntity">
+		select  a.stat_date as statDate,
+				sum(a.push_count) as pushCount,
+				sum(a.pop_count) as popCount,
+				sum(a.banner_count) as bannerCount,
+				sum(a.shortcut_count) as shortcutCount,
+				sum(a.install_count) as installCount,
+				sum(a.earning) as earning 
+		from ads_stat a,app b, ads c		
+		<where>
+			a.ads_id=c.id and a.app_id=b.id
+			<if test="fromDate != null">and a.stat_date>=#{fromDate}</if>
+			<if test="toDate != null"><![CDATA[ and a.stat_date <=#{toDate}]]></if>	
+			<if test="advertiserId != null">and c.advertiser_id=#{advertiserId}</if>
+			<if test="adsId != null">and a.ads_id=#{adsId}</if>
+			<if test="cpId != null">and b.cp_id=#{cpId}</if>
+			<if test="channelId != null">and a.channel_id=#{channelId}</if>
+			<if test="appId != null">and a.app_id=#{appId}</if>
+		</where>
+		group by statDate order by statDate desc
+	</select>
+	
+	<select id="getAdsStat" parameterType="map" resultType="com.ads.entity.AdsStatEntity">
+		select a.ads_id as adsId,
+				sum(a.push_count) as pushCount,
+				sum(a.pop_count) as popCount,
+				sum(a.banner_count) as bannerCount,
+				sum(a.shortcut_count) as shortcutCount,
+				sum(a.install_count) as installCount,
+				sum(a.earning) as earning 
+		from ads_stat a,app b, ads c		
+		<where>
+			a.ads_id=c.id and a.app_id=b.id
+			<if test="fromDate != null">and a.stat_date>=#{fromDate}</if>
+			<if test="toDate != null"><![CDATA[ and a.stat_date <=#{toDate}]]></if>	
+			<if test="advertiserId != null">and c.advertiser_id=#{advertiserId}</if>
+			<if test="adsId != null">and a.ads_id=#{adsId}</if>
+			<if test="cpId != null">and b.cp_id=#{cpId}</if>
+			<if test="channelId != null">and a.channel_id=#{channelId}</if>
+			<if test="appId != null">and a.app_id=#{appId}</if>
+		</where>
+		group by adsId order by adsId desc
+	</select>
+	<select id="getAppStat" parameterType="map" resultType="com.ads.entity.AdsStatEntity">
+		select a.app_id as appId,
+				sum(a.push_count) as pushCount,
+				sum(a.pop_count) as popCount,
+				sum(a.banner_count) as bannerCount,
+				sum(a.shortcut_count) as shortcutCount,
+				sum(a.install_count) as installCount,
+				sum(a.earning) as earning 
+		from ads_stat a,app b, ads c		
+		<where>
+			a.ads_id=c.id and a.app_id=b.id
+			<if test="fromDate != null">and a.stat_date>=#{fromDate}</if>
+			<if test="toDate != null"><![CDATA[ and a.stat_date <=#{toDate}]]></if>	
+			<if test="advertiserId != null">and c.advertiser_id=#{advertiserId}</if>
+			<if test="adsId != null">and a.ads_id=#{adsId}</if>
+			<if test="cpId != null">and b.cp_id=#{cpId}</if>
+			<if test="channelId != null">and a.channel_id=#{channelId}</if>
+			<if test="appId != null">and a.app_id=#{appId}</if>
+		</where>
+		group by appId order by appId desc
+	</select>
+	<select id="getChannelStat" parameterType="map" resultType="com.ads.entity.AdsStatEntity">
+		select a.channel_id as channelId,
+				sum(a.push_count) as pushCount,
+				sum(a.pop_count) as popCount,
+				sum(a.banner_count) as bannerCount,
+				sum(a.shortcut_count) as shortcutCount,
+				sum(a.install_count) as installCount,
+				sum(a.earning) as earning 
+		from ads_stat a,app b, ads c		
+		<where>
+			a.ads_id=c.id and a.app_id=b.id
+			<if test="fromDate != null">and a.stat_date>=#{fromDate}</if>
+			<if test="toDate != null"><![CDATA[ and a.stat_date <=#{toDate}]]></if>	
+			<if test="advertiserId != null">and c.advertiser_id=#{advertiserId}</if>
+			<if test="adsId != null">and a.ads_id=#{adsId}</if>
+			<if test="cpId != null">and b.cp_id=#{cpId}</if>
+			<if test="channelId != null">and a.channel_id=#{channelId}</if>
+			<if test="appId != null">and a.app_id=#{appId}</if>
+		</where>
+		group by channelId order by channelId desc
+	</select>			
+		
+</mapper>

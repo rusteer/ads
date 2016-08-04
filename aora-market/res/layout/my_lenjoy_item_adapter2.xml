@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/my_lenjoy_item_lay" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@+id/lenjoy_apps_lay" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="181.0dip" android:layout_marginLeft="5.5999756dip" android:layout_marginRight="5.5999756dip">
+        <TableRow android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginTop="3.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lenjoy_row_item1_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@+id/lenjoy_row_item1_img" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/cp_defaulf" />
+                    <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/lenjoy_app_out_icon" />
+                </FrameLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center" android:id="@+id/lenjoy_row_item1_text" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="糖果传奇" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lenjoy_row_item2_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@+id/lenjoy_row_item2_img" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/cp_defaulf" />
+                    <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/lenjoy_app_out_icon" />
+                </FrameLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center" android:id="@+id/lenjoy_row_item2_text" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="糖果传奇" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lenjoy_row_item3_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@+id/lenjoy_row_item3_img" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/cp_defaulf" />
+                    <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/lenjoy_app_out_icon" />
+                </FrameLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center" android:id="@+id/lenjoy_row_item3_text" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="糖果传奇" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lenjoy_row_item4_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@+id/lenjoy_row_item4_img" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/cp_defaulf" />
+                    <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/lenjoy_app_out_icon" />
+                </FrameLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center" android:id="@+id/lenjoy_row_item4_text" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="糖果传奇" android:singleLine="true" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginTop="8.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lenjoy_row2_item1_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@+id/lenjoy_row2_item1_img" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/cp_defaulf" />
+                    <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/lenjoy_app_out_icon" />
+                </FrameLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center" android:id="@+id/lenjoy_row2_item1_text" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="糖果传奇" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lenjoy_row2_item2_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@+id/lenjoy_row2_item2_img" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/cp_defaulf" />
+                    <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/lenjoy_app_out_icon" />
+                </FrameLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center" android:id="@+id/lenjoy_row2_item2_text" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="糖果传奇" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lenjoy_row2_item3_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@+id/lenjoy_row2_item3_img" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/cp_defaulf" />
+                    <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/lenjoy_app_out_icon" />
+                </FrameLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center" android:id="@+id/lenjoy_row2_item3_text" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="糖果传奇" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lenjoy_row2_item4_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@+id/lenjoy_row2_item4_img" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/cp_defaulf" />
+                    <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/lenjoy_app_out_icon" />
+                </FrameLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center" android:id="@+id/lenjoy_row2_item4_text" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="糖果传奇" android:singleLine="true" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <View android:id="@+id/lenjoy_split_line4" android:background="@drawable/driver_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="11.0dip" android:layout_below="@id/lenjoy_apps_lay" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/my_lenjoy_theme_and_time_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="11.0dip" android:layout_below="@id/lenjoy_split_line4">
+        <TextView android:textSize="12.299988dip" android:textColor="@color/gray" android:id="@+id/my_lenjoy_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一天前" android:layout_alignParentRight="true" />
+        <TextView android:textSize="13.299988dip" android:textColor="@color/set_title_color" android:ellipsize="end" android:id="@+id/lenjoy_theme" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="奇趣刺激的极地冒险之旅再次开启，保卫萝卜，爱奇艺，QQ，易信，凤凰新闻等游戏及应用全新来袭!" android:maxLines="3" android:layout_toLeftOf="@+id/my_lenjoy_date" />
+    </RelativeLayout>
+    <View android:id="@+id/lenjoy_split_line3" android:background="@drawable/driver_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="11.0dip" android:layout_below="@id/my_lenjoy_theme_and_time_lay" />
+    <LinearLayout android:id="@+id/lenjoy_bottom_lay" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_below="@id/lenjoy_split_line3">
+        <RelativeLayout android:gravity="center" android:id="@+id/my_lenjoy_state_lay" android:background="@drawable/list_item_bg" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@+id/my_lenjoy_boutique_img" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/lenjoy_boutique" />
+            <TextView android:textSize="13.299988dip" android:textColor="@color/softlist_new_txt_color" android:gravity="center" android:id="@+id/my_lenjoy_state" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="38.0dip" android:text="不通过" />
+        </RelativeLayout>
+        <View android:background="@drawable/driver_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:gravity="center" android:id="@+id/lenjoy_praise_btn_lay" android:background="@drawable/list_item_bg" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@+id/lenjoy_praise_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/praise_up" />
+            <TextView android:textSize="13.299988dip" android:textColor="@color/softlist_new_txt_color" android:gravity="center" android:id="@+id/lenjoy_praise_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="赞" />
+        </LinearLayout>
+        <View android:background="@drawable/driver_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:gravity="center" android:id="@+id/lenjoy_bad_praise_lay" android:background="@drawable/list_item_bg" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@+id/lenjoy_bad_praise_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bad_praise_up" />
+            <TextView android:textSize="13.299988dip" android:textColor="@color/softlist_new_txt_color" android:gravity="center" android:id="@+id/lenjoy_bad_praise_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="踩" />
+        </LinearLayout>
+        <View android:background="@drawable/driver_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:gravity="center" android:id="@+id/lenjoy_comment_lay" android:background="@drawable/list_item_bg" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@+id/lenjoy_comment_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lenjoy_comment_icon" />
+            <TextView android:textSize="13.299988dip" android:textColor="@color/softlist_new_txt_color" android:gravity="center" android:id="@+id/lenjoy_comment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="评论" />
+        </LinearLayout>
+        <View android:background="@drawable/driver_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:gravity="center" android:id="@+id/lenjoy_delete_lay" android:background="@drawable/list_item_bg" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@+id/lenjoy_delete_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/my_lenjoy_delete_icon" />
+            <TextView android:textSize="13.299988dip" android:textColor="@color/softlist_new_txt_color" android:gravity="center" android:id="@+id/lenjoy_delete_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="删除" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/lenjoy_bottom_lay" />
+</RelativeLayout>

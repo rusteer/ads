@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:id="@+id/mix_orther_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_marginTop="11.0dip" android:text="专题标题" android:singleLine="true" />
+    <ImageView android:id="@+id/mix_orther_icon" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="124.0dip" android:layout_margin="13.299988dip" android:src="@drawable/ad_default_banner" android:scaleType="fitXY" />
+</LinearLayout>

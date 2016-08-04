@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/ex_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ex_lay" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ex_image">
+        <TextView android:textSize="16.699982dip" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/ex_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="凤凰新闻" android:singleLine="true" />
+        <TextView android:textSize="13.0dip" android:ellipsize="end" android:id="@+id/ex_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="第十二届全国人民代表大会第二次会议" android:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

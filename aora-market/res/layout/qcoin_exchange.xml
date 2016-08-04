@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:background="@drawable/qcoin_exchange_icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="center" />
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@+id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curr_total_coin" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffb400" android:id="@+id/curr_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:layout_toRightOf="@+id/tv1" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="13.0sp" android:textColor="#ff8b8e95" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/price_qcoin" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/qcoin_exchange_num" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/please_input_qq" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/please_input_qq_again" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <EditText android:textSize="12.0dip" android:textColorHint="@color/edit_text_hint_color" android:id="@+id/exchange_number" android:background="@drawable/exchange_edittext_bg" android:paddingLeft="5.0dip" android:layout_width="157.0dip" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:singleLine="true" android:maxLength="5" android:digits="0123456789" android:layout_alignParentRight="true" android:inputType="numberDecimal" />
+                <EditText android:textColorHint="@color/edit_text_hint_color" android:id="@+id/qq_num" android:background="@drawable/exchange_edittext_bg" android:paddingLeft="5.0dip" android:layout_width="157.0dip" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:singleLine="true" android:maxLength="15" android:digits="0123456789" android:layout_alignParentRight="true" android:inputType="numberDecimal" />
+                <EditText android:textColorHint="@color/edit_text_hint_color" android:id="@+id/qq_num_again" android:background="@drawable/exchange_edittext_bg" android:paddingLeft="5.0dip" android:layout_width="157.0dip" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:singleLine="true" android:maxLength="15" android:digits="0123456789" android:layout_alignParentRight="true" android:inputType="numberDecimal" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@+id/commitbtn" android:background="@drawable/integral_main_sign_btn_selector" android:layout_width="115.0dip" android:layout_height="30.0dip" android:layout_marginTop="40.0dip" android:text="@string/exchange_commit" />
+    </LinearLayout>
+</ScrollView>

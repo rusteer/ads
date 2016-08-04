@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/child_title_lay_layout" android:background="@color/title_bg_color2" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/child_title_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/child_title_back_img" android:background="@drawable/title_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/child_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:maxLength="10" android:layout_toRightOf="@+id/child_title_back_img" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/child_title_right_lay" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/child_title_search_img" android:background="@drawable/title_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_toLeftOf="@+id/child_title_download_img" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/child_title_download_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/title_download" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@+id/child_title_download_count" android:background="@drawable/recommend_new" android:visibility="gone" android:layout_width="7.299988dip" android:layout_height="7.299988dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="2.0dip" android:layout_alignTop="@id/child_title_download_img" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@+id/child_title_line" android:background="#ffcecece" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

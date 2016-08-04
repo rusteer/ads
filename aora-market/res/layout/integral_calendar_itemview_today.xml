@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffefa37d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/calendar_item_today_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="马上\n签到" android:singleLine="false" />
+</LinearLayout>

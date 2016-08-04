@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gionee.aora.market.gui.view.dragview.MyDragLayout android:id="@+id/actionsContentView" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/base_left" layout="@layout/base_left_layout" />
+    <include layout="@layout/base_tab_main" />
+</com.gionee.aora.market.gui.view.dragview.MyDragLayout>

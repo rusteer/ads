@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/child_title_lay" android:background="@color/title_bg_color2" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/child_title_back_img" android:background="@drawable/title_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.5dip" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/child_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="易用汇" android:singleLine="true" android:layout_toRightOf="@+id/child_title_back_img" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/child_title_right_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@+id/child_title_line" android:background="#ffcecece" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

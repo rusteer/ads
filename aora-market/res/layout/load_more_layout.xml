@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_down_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/loadingMore" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/progressBarImg" android:background="@drawable/loading_view_shape" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="3.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff8b8b8b" android:layout_gravity="center_vertical" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="列表正在加载. . ." />
+    </LinearLayout>
+    <Button android:textSize="15.0sp" android:textColor="#ff5b5b5b" android:id="@+id/tryAgagin" android:background="@drawable/list_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="重 新 加 载" android:layout_centerInParent="true" />
+</RelativeLayout>

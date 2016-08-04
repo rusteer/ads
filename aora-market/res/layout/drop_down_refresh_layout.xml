@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/drop_down_refresh_head" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/dip16" android:layout_height="@dimen/dip16" android:layout_marginRight="@dimen/dip2">
+        <ImageView android:id="@+id/drop_down_refresh_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh_arrow" android:layout_centerInParent="true" android:contentDescription="@null" />
+        <ImageView android:id="@+id/drop_down_refresh_pb" android:background="@drawable/refreshing_view_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dip12" android:textColor="@color/refresh_txt_color" android:layout_gravity="center" android:id="@+id/drop_down_refresh_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drop_dowm" />
+</LinearLayout>

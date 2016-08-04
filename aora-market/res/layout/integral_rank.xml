@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/rank_all_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rank_bg_image" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rank_title_image" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/myrank" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/integral_myrank" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/ranklist_top_bg" android:layout_width="fill_parent" android:layout_height="46.69998dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/ranktop" android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rank_rank" android:layout_weight="2.0" />
+            <View android:background="@drawable/ranklist_top_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/ranktop" android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rank_id" android:layout_weight="3.0" />
+            <View android:background="@drawable/ranklist_top_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/ranktop" android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rank_gold" android:layout_weight="3.0" />
+        </LinearLayout>
+        <ListView android:id="@+id/rankview" android:background="@color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

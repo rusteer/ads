@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@+id/update_list_adapter_split_line" android:background="@drawable/driver_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@+id/infos_relay" android:layout_width="fill_parent" android:layout_height="67.0dip" android:layout_below="@id/update_list_adapter_split_line">
+        <View android:id="@+id/up_split_view" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <com.gionee.aora.market.gui.download.view.DownloadNewButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/soft_list_update_button" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <CheckBox android:id="@+id/soft_list_update_checkbox" android:padding="@dimen/dip10" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/conven_checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/extend_list_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="18.599976dip" android:src="@drawable/cp_defaulf" android:scaleType="fitXY" android:layout_below="@id/up_split_view" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/spare_flow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spare_flow" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@+id/soft_list_update_button" android:layout_toRightOf="@+id/extend_list_icon" android:layout_below="@id/up_split_view">
+            <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:id="@+id/software_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="易用汇" android:singleLine="true" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/software_information_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@+id/soft_list_update_button" android:layout_toRightOf="@+id/extend_list_icon" android:layout_below="@id/software_name">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="@color/small_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本:" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/small_text_color" android:ellipsize="end" android:id="@+id/software_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="50.0dip" android:text="4.4" android:singleLine="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/point" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/small_text_color" android:ellipsize="end" android:id="@+id/software_update_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="60.0dip" android:text="4.5" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="@color/small_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大小:" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/small_text_color" android:id="@+id/old_software_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="0.0M" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/small_text_color" android:id="@+id/software_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="5.4M" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/progressBar_rel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@+id/downloadPresent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progress="100" android:progressDrawable="@drawable/progress_horizontal" style="?android:attr/progressBarStyleHorizontal" />
+                    <ProgressBar android:id="@+id/downloadPresent_stop" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_horizontal_stop" style="?android:attr/progressBarStyleHorizontal" />
+                </FrameLayout>
+                <TextView android:textSize="11.0sp" android:textColor="@*android:color/black" android:id="@+id/downloadManager_packageSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="10.00MB" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ff519d35" android:id="@+id/update_precent_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.599976dip" android:layout_marginTop="6.299988dip" android:text="80%的人更新了" android:layout_below="@id/infos_relay" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/small_text_color" android:id="@+id/update_infos_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.599976dip" android:layout_marginTop="4.299988dip" android:layout_marginRight="15.0dip" android:text="修复了旧版本的Bug" android:singleLine="true" android:drawableRight="@drawable/update_more_infos_btn" android:drawablePadding="2.0dip" android:layout_below="@id/update_precent_textview" />
+    <View android:id="@+id/up_down_split_view" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/update_infos_textview" />
+    <RelativeLayout android:id="@+id/menu_lay" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/up_down_split_view">
+        <View android:id="@+id/split_up_down" android:background="@drawable/driver_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/split_up_down">
+            <TextView android:textSize="15.0dip" android:textColor="@color/list_item_soft_version" android:gravity="center" android:id="@+id/ignore_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="忽略" android:layout_weight="1.0" />
+            <View android:layout_gravity="center" android:id="@+id/split_up_down" android:background="@drawable/driver_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/list_item_soft_version" android:gravity="center" android:id="@+id/details_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="应用详情" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

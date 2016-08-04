@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_marginTop="16.699982dip">
+        <TextView android:textSize="13.299988dip" android:textColor="#ffee6e10" android:id="@+id/keyword_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大众点评" />
+        <TextView android:textSize="13.299988dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:text="此类别的其他应用" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/soft_list_hor_app_1" android:background="@drawable/list_item_bg" android:paddingTop="16.699982dip" android:paddingBottom="16.699982dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@+id/soft_list_hor_icon_1" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:src="@drawable/cp_defaulf" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@+id/soft_list_hor_name_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="软件名称" android:singleLine="true" />
+            <com.gionee.aora.market.gui.download.view.DownloadProgressButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/soft_list_hor_btn_1" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginTop="7.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/soft_list_hor_app_2" android:background="@drawable/list_item_bg" android:paddingTop="16.699982dip" android:paddingBottom="16.699982dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@+id/soft_list_hor_icon_2" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:src="@drawable/cp_defaulf" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@+id/soft_list_hor_name_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="软件名称" android:singleLine="true" />
+            <com.gionee.aora.market.gui.download.view.DownloadProgressButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/soft_list_hor_btn_2" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginTop="7.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/soft_list_hor_app_3" android:background="@drawable/list_item_bg" android:paddingTop="16.699982dip" android:paddingBottom="16.699982dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@+id/soft_list_hor_icon_3" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:src="@drawable/cp_defaulf" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@+id/soft_list_hor_name_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="软件名称" android:singleLine="true" />
+            <com.gionee.aora.market.gui.download.view.DownloadProgressButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/soft_list_hor_btn_3" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginTop="7.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/soft_list_hor_app_4" android:background="@drawable/list_item_bg" android:paddingTop="16.699982dip" android:paddingBottom="16.699982dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@+id/soft_list_hor_icon_4" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:src="@drawable/cp_defaulf" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@+id/soft_list_hor_name_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="软件名称" android:singleLine="true" />
+            <com.gionee.aora.market.gui.download.view.DownloadProgressButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/soft_list_hor_btn_4" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginTop="7.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

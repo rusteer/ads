@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/lenjoy_user_detail_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.RefreshableView android:id="@+id/my_refreshable_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gionee.aora.market.gui.view.MarketListView android:scrollbarStyle="outsideOverlay" android:id="@+id/my_lenjoy_listview" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    </com.gionee.aora.market.gui.view.RefreshableView>
+</RelativeLayout>

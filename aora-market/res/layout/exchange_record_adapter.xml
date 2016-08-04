@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/icon" android:layout_width="130.0dip" android:layout_height="130.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/exchange_record_item_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0dip" android:textColor="#ff272727" android:id="@+id/exchange_type_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="8.0dip" android:text="Q币10个" />
+        <TextView android:textSize="12.5dip" android:textColor="#ffff7200" android:id="@+id/exchange_use_golds" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="2.0dip" android:text="1000金币" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <TextView android:textSize="11.5dip" android:textColor="#ff272727" android:ellipsize="end" android:id="@+id/exchange_adress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:text="" android:maxLines="3" />
+            <TextView android:textSize="11.5dip" android:textColor="#ff272727" android:id="@+id/exchange_express" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="12.599976dip" android:textColor="#ff929292" android:id="@+id/exchange_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="3.0dip" android:text="2013-09-18  12:43" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="35.299988dip" android:minHeight="35.299988dip">
+        <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:id="@+id/necessary_new_theme_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.299988dip" android:text="兑换中心" android:singleLine="true" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/item_exchange_layer" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="83.0dip">
+        <ImageView android:id="@+id/item_icon" android:layout_width="56.599976dip" android:layout_height="56.599976dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <Button android:id="@+id/item_exchange_btn" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="10.0dip" android:text="兑换" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_style" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_ln_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_toLeftOf="@+id/item_exchange_btn" android:layout_toRightOf="@+id/item_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@+id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试" android:singleLine="true" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:id="@+id/item_real_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="超值价：" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@+id/qcoin_exchange_layer" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="83.0dip">
+        <ImageView android:id="@+id/qcoin_icon" android:layout_width="56.599976dip" android:layout_height="56.599976dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <Button android:id="@+id/qcoin_exchange_btn" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="10.0dip" android:text="兑换" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_style" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_ln_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_toLeftOf="@+id/qcoin_exchange_btn" android:layout_toRightOf="@+id/qcoin_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@+id/qcoin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试" android:singleLine="true" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:id="@+id/qcoin_real_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="超值价：" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@+id/call_exchange_layer" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="83.0dip">
+        <ImageView android:id="@+id/call_icon" android:layout_width="56.599976dip" android:layout_height="56.599976dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <Button android:id="@+id/call_exchange_btn" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="10.0dip" android:text="兑换" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_style" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_ln_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_toLeftOf="@+id/call_exchange_btn" android:layout_toRightOf="@+id/call_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@+id/call_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试" android:singleLine="true" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff999999" android:id="@+id/call_real_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="超值价：" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

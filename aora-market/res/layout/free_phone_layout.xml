@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/main_bg" android:paddingTop="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="13.299988dip" android:textColor="@color/set_title_color" android:id="@+id/free_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="@string/free_phone_txt" />
+            <TextView android:textSize="13.299988dip" android:textColor="#ff8ac870" android:id="@+id/free_re_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:text="解绑" android:layout_alignTop="@id/free_phone" android:layout_alignParentRight="true" />
+            <ImageView android:id="@+id/only_time_free_iv" android:background="@drawable/free_time_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_below="@id/free_phone" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff4e8dc3" android:gravity="center_horizontal" android:id="@+id/only_time_free_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="06:00-12:00" android:layout_alignLeft="@+id/only_time_free_iv" android:layout_alignRight="@id/only_time_free_iv" android:layout_alignBottom="@id/only_time_free_iv" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip18" android:layout_below="@id/only_time_free_iv" android:layout_centerHorizontal="true">
+                <TextView android:textSize="18.0dip" android:textColor="@color/set_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您有" />
+                <TextView android:textSize="36.0dip" android:textColor="#ffe66e34" android:layout_gravity="center_vertical" android:id="@+id/free_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="7分钟" />
+                <TextView android:textSize="18.0dip" android:textColor="@color/set_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通话时间" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/free_call_btn" android:background="@drawable/btn_green_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip54" android:layout_marginLeft="@dimen/dip30" android:layout_marginRight="@dimen/dip30" android:layout_marginBottom="@dimen/dip50" android:layout_centerInParent="true">
+                <ImageView android:background="@drawable/free_call_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="拨打免费电话" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/free_get_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginBottom="@dimen/dip40" android:text="赚取金币" android:drawableLeft="@drawable/cion_green" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/free_exchange_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="@dimen/dip20" android:layout_marginBottom="@dimen/dip40" android:text="兑换时间" android:drawableLeft="@drawable/free_ec_bg" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

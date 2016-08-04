@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/get_golds_lay" android:layout_width="fill_parent" android:layout_height="@dimen/dip40">
+        <TextView android:textColor="@color/person_type" android:id="@+id/get_golds_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="签到获得:" android:layout_alignParentLeft="true" />
+        <TextView android:textColor="@color/person_golds_num" android:id="@+id/get_golds_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:text="3金币" android:layout_toRightOf="@+id/get_golds_type" />
+        <TextView android:textColor="@color/person_golds_dtae" android:id="@+id/get_golds_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:text="2012-03-03" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

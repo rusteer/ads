@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gionee.aora.market.gui.view.MyRelativeLayout android:id="@+id/content_main" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.MainTitleView android:orientation="vertical" android:id="@+id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/slt_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="bottom" android:id="@+id/slt_view_0" android:layout_width="fill_parent" android:layout_height="2.0dip" android:src="@color/tab_select" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="bottom" android:id="@+id/slt_view_1" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="bottom" android:id="@+id/slt_view_2" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="bottom" android:id="@+id/slt_view_3" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="bottom" android:id="@+id/slt_view_4" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/main_radio" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@+id/radio_button0" style="@style/main_tab_bottom" />
+        <RadioButton android:id="@+id/radio_button1" style="@style/main_tab_bottom" />
+        <RadioButton android:id="@+id/radio_button2" style="@style/main_tab_bottom" />
+        <RadioButton android:id="@+id/radio_button3" style="@style/main_tab_bottom" />
+        <RadioButton android:id="@+id/radio_button4" style="@style/main_tab_bottom" />
+    </RadioGroup>
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@+id/update_count" android:background="@drawable/title_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="25.0dip" android:text="5" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TabHost android:id="@*android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/main_radio" android:layout_below="@id/titlebar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TabWidget android:id="@*android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        </LinearLayout>
+    </TabHost>
+    <View android:id="@+id/bottom_shadow" android:background="@drawable/main_bottombar_shadow" android:layout_width="fill_parent" android:layout_height="4.299988dip" android:layout_above="@+id/main_radio" />
+</com.gionee.aora.market.gui.view.MyRelativeLayout>

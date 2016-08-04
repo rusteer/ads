@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/lenjoy_app_rotate_main_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/lenjoy_app_rotate_img" android:layout_width="234.6dip" android:layout_height="390.0dip" android:src="@drawable/soft_introduction_default_screenshot" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <View android:id="@+id/lenjoy_app_rotate_top_img" android:background="@drawable/lenjoy_app_edit_rate_top" android:layout_width="234.6dip" android:layout_height="127.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/lenjoy_app_roate_bottom_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/lenjoy_app_roate_begin_btn" android:background="@drawable/lenjoy_app_edit_rate_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <Button android:id="@+id/lenjoy_app_roate_finish_btn" android:background="@drawable/lenjoy_app_edit_finish_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

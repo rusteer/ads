@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@+id/necessary_new_theme_lay" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <View android:layout_gravity="center_vertical" android:background="#ff9dd06c" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/necessary_new_group_title_lay" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip">
+            <CheckBox android:id="@+id/necessary_new_theme_checkbox" android:focusable="false" android:clickable="false" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="8.0dip" android:button="@drawable/necessary_checkbox_selector" />
+            <TextView android:textColor="#ff525252" android:gravity="center_vertical" android:id="@+id/necessary_new_theme_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="聊天通讯" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.rot.repository.mybatis.AdsRetentionStatRepositoryMyBatis">
+	<select id="getStat" parameterType="map" resultType="com.rot.entity.AdsRetentionStatEntity">
+		select  a.activate_date as activateDate,
+				sum(a.activate_count) as activateCount,
+				sum(a.day1count) as day1Count,
+				sum(a.day2count) as day2Count,
+				sum(a.day3count) as day3Count,
+				sum(a.day4count) as day4Count,
+				sum(a.day5count) as day5Count,
+				sum(a.day6count) as day6Count,
+				sum(a.day7count) as day7Count,
+				sum(a.day14count) as day14Count,
+				sum(a.day30count) as day30Count,
+				sum(a.day60count) as day60Count 
+		from ads_retention_stat a 		
+		<where>
+			a.ads_id>1
+			<if test="adsId != null">and a.ads_id=#{adsId}</if>
+			<if test="fromDate != null">and a.activate_date>=#{fromDate}</if>
+			<if test="toDate != null"><![CDATA[ and a.activate_date <=#{toDate}]]></if>	
+		</where>
+		group by activateDate order by activateDate desc
+	</select>
+</mapper>

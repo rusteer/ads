@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/information_listitem" android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/state" android:background="@drawable/state_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/sp14" android:textStyle="bold" android:textColor="#ff656565" android:gravity="center_vertical" android:id="@+id/searchAppName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="50.0dip" android:text="1 .  愤怒的小鸟" android:singleLine="true" android:layout_toLeftOf="@+id/state" android:layout_centerVertical="true" />
+</RelativeLayout>

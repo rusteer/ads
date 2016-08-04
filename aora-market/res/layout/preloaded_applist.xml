@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="107.0dip" android:minHeight="107.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginRight="7.0dip">
+        <ImageView android:id="@+id/first_install_icon" android:paddingTop="9.0dip" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:src="@drawable/cp_defaulf" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/install_list_textcolor" android:id="@+id/first_install_name" android:paddingLeft="6.6999817dip" android:paddingTop="5.0dip" android:paddingRight="6.6999817dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用名" android:singleLine="true" android:layout_below="@id/first_install_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.699982dip" android:textColor="@color/install_list_textcolor" android:id="@+id/first_install_appsize" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15MB" android:layout_below="@id/first_install_name" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <CheckBox android:id="@+id/first_install_checkbox" android:background="@drawable/preload_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

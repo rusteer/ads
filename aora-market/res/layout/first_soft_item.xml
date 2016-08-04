@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="84.0dip" android:minHeight="84.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/particular_list_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="10.0dip" android:src="@drawable/cp_defaulf" android:layout_centerVertical="true" />
+    <View android:background="@drawable/driver_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@+id/particular_list_icon" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@+id/particular_info_top_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gionee.aora.market.gui.download.view.DownloadProgress android:textSize="12.0dip" android:gravity="center" android:id="@+id/particular_list_button" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/soft_item_name_size" android:textColor="@color/set_title_color" android:id="@+id/particular_list_appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AppName" android:singleLine="true" android:layout_toLeftOf="@+id/particular_list_button" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/particular_info_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toLeftOf="@+id/particular_list_button" android:layout_below="@id/particular_list_appName">
+                <TextView android:textSize="11.0dip" android:textColor="@color/gray" android:id="@+id/particular_list_downloadRegion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10000次下载" />
+                <View android:id="@+id/particular_list_line" android:background="@color/gray" android:layout_width="1.0dip" android:layout_height="10.0dip" android:layout_marginLeft="8.0dip" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/gray" android:id="@+id/particular_list_packageSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="10.00MB" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@+id/particular_list_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" android:singleLine="true" android:layout_below="@id/particular_info_top_lay" />
+    </RelativeLayout>
+</RelativeLayout>

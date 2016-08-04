@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="76.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="今日收入:" />
+                <TextView android:textSize="24.599976dip" android:textColor="#ffee6f0f" android:gravity="center_vertical" android:id="@+id/today_total" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/main_bg1" android:layout_width="fill_parent" android:layout_height="6.5999756dip" />
+        <com.gionee.aora.market.gui.view.IntegralSignCalendarView android:id="@+id/calendar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/main_bg1" android:layout_width="fill_parent" android:layout_height="6.5999756dip" />
+        <RelativeLayout android:id="@+id/install_btn" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="73.0dip">
+            <ImageView android:id="@+id/integral_getmoney_icon1" android:layout_width="46.599976dip" android:layout_height="46.599976dip" android:layout_marginLeft="13.299988dip" android:layout_marginRight="13.299988dip" android:src="@drawable/integral_getmoney_icon_1" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/integral_getmoney_icon1" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@+id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安装应用" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@+id/detail_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="下载并安装相关应用赚取金币" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="80.0dip" />
+        <RelativeLayout android:id="@+id/update_app_btn" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="73.0dip">
+            <ImageView android:id="@+id/integral_getmoney_icon2" android:layout_width="46.599976dip" android:layout_height="46.599976dip" android:layout_marginLeft="13.299988dip" android:layout_marginRight="13.299988dip" android:src="@drawable/integral_getmoney_icon_2" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/integral_getmoney_icon2" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@+id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更新应用" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@+id/detail_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="更新应用送金币哦" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#ffdddddd" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="80.0dip" />
+        <RelativeLayout android:id="@+id/playgame_btn" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="73.0dip">
+            <ImageView android:id="@+id/integral_getmoney_icon3" android:layout_width="46.599976dip" android:layout_height="46.599976dip" android:layout_marginLeft="13.299988dip" android:layout_marginRight="13.299988dip" android:src="@drawable/integral_getmoney_icon_3" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/integral_getmoney_icon3" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@+id/tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="玩玩游戏" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@+id/detail_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="从易用汇启动游戏，金币赏不停" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="80.0dip" />
+        <RelativeLayout android:id="@+id/qa_btn" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="73.0dip">
+            <ImageView android:id="@+id/integral_getmoney_icon_4" android:layout_width="46.599976dip" android:layout_height="46.599976dip" android:layout_marginLeft="13.299988dip" android:layout_marginRight="13.299988dip" android:src="@drawable/integral_getmoney_icon_4" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/integral_getmoney_icon_4" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@+id/tv4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有奖必答" />
+                <ImageView android:id="@+id/question_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/questionnaire_new" android:layout_toRightOf="@+id/tv4" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@+id/detail_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="做问卷，金币送送送" android:singleLine="true" android:layout_below="@id/tv4" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="80.0dip" />
+        <RelativeLayout android:id="@+id/lejoy_btn" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="73.0dip">
+            <ImageView android:id="@+id/integral_getmoney_icon_5" android:layout_width="46.599976dip" android:layout_height="46.599976dip" android:layout_marginLeft="13.299988dip" android:layout_marginRight="13.299988dip" android:src="@drawable/integral_getmoney_icon_5" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/integral_getmoney_icon_5" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@+id/tv5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="乐享一下" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@+id/detail_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="写乐享，赚赞赚金币" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

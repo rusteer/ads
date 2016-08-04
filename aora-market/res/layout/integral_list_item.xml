@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/soft_item_height" android:minHeight="@dimen/soft_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/icon_img" android:background="@null" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="10.0dip" android:src="@drawable/cp_defaulf" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/integral_text" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/soft_list_button" android:layout_toRightOf="@+id/icon_img" android:layout_centerVertical="true">
+        <TextView android:textSize="17.0dip" android:textColor="@color/soft_problem_textcolor" android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="APPNAME" android:singleLine="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/soft_app_size_color" android:id="@+id/app_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.93MB" />
+        <TextView android:textSize="@dimen/sp11" android:textColor="#ffe6a519" android:id="@+id/app_integral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首次安装可免费获10积分" />
+    </LinearLayout>
+    <com.gionee.aora.market.gui.download.view.DownloadProgress android:textSize="12.0dip" android:id="@+id/soft_list_button" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_margin="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

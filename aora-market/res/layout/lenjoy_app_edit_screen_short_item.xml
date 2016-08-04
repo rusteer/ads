@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@+id/lenjoy_app_edit_screen_short_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@+id/lenjoy_app_edit_screen_short_item_img" android:layout_width="@dimen/screen_shot_img_width" android:layout_height="@dimen/screen_shot_img_height" android:src="@drawable/soft_introduction_default_screenshot" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@+id/lenjoy_app_edit_choise_screen_short_lay" android:background="@drawable/lenjoy_app_edit_choise_top" android:visibility="gone" android:layout_width="@dimen/screen_shot_img_width" android:layout_height="@dimen/screen_shot_img_height">
+            <ImageView android:layout_width="21.299988dip" android:layout_height="21.299988dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/lenjoy_edit_app_checked_caver" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

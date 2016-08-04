@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/other_cp_item_layout" android:layout_width="fill_parent" android:layout_height="@dimen/soft_list_item_height">
+        <RelativeLayout android:id="@+id/apk_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/soft_list_soft_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/cp_defaulf" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/soft_list_gionee_certify_iv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gionee_flag" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:id="@+id/soft_list_appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:text="AppName" android:singleLine="true" android:layout_toLeftOf="@+id/soft_list_packageSize" android:layout_toRightOf="@+id/apk_icon" android:layout_alignTop="@id/soft_list_soft_icon" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/soft_app_size_color" android:gravity="top" android:id="@+id/soft_list_packageSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="10.00MB" android:layout_toLeftOf="@+id/soft_split" android:layout_alignTop="@id/soft_list_appName" />
+        <RatingBar android:id="@+id/soft_list_RatingBar" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="10.0dip" android:numStars="5" android:rating="2.5" android:isIndicator="true" android:layout_below="@id/soft_list_appName" android:layout_alignLeft="@+id/soft_list_appName" style="@style/foodRatingBar" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/soft_app_size_color" android:id="@+id/soft_list_downloadRegion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10000次下载" android:layout_alignTop="@id/soft_list_RatingBar" android:layout_alignRight="@id/soft_list_packageSize" />
+        <com.gionee.aora.market.gui.download.view.DownloadButton android:gravity="center" android:id="@+id/soft_list_button" android:layout_width="@dimen/soft_list_download_button_size" android:layout_height="@dimen/soft_list_download_button_size" android:layout_alignParentRight="true" />
+        <ImageView android:id="@+id/soft_split" android:background="@color/split_line" android:layout_width="1.0px" android:layout_height="40.0dip" android:layout_toLeftOf="@+id/soft_list_button" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/black" android:id="@+id/otherMaybeLike" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="你可能还喜欢" />
+</RelativeLayout>

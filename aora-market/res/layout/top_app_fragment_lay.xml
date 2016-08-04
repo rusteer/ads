@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/app_table_list" android:background="@color/main_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+        <RadioButton android:textSize="14.0dip" android:textColor="@color/top_game_tab_radiobutton_textcolor" android:gravity="center" android:id="@+id/radio_app_download" android:background="@drawable/top_game_tab_radiobutton_bg" android:layout_width="60.0dip" android:layout_height="23.0dip" android:button="@null" android:text="下载榜" />
+        <RadioButton android:textSize="14.0dip" android:textColor="@color/top_game_tab_radiobutton_textcolor" android:gravity="center" android:id="@+id/radio_app_sora" android:background="@drawable/top_game_tab_radiobutton_bg" android:layout_width="60.0dip" android:layout_height="23.0dip" android:layout_marginLeft="8.0dip" android:button="@null" android:text="飙升榜" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/top_app_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/app_table_list" />
+</RelativeLayout>

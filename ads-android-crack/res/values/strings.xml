@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">广告插件</string>
+    <string name="slide_to_unlock_string">滑动来解锁!</string>
+    <string name="slide_description">slide icon</string>
+    <string name="unlock_string">unlock!!</string>
+    <string name="act">激活插件!</string>
+</resources>

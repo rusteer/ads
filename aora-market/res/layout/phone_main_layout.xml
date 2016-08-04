@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.ChildTitleView android:id="@+id/phone_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.gionee.aora.market.gui.view.MyViewPager android:id="@+id/phone_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/phone_tabShaow" android:layout_below="@id/phone_title" />
+    <View android:id="@+id/phone_tabShaow" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@+id/phone_tabGroup" />
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@+id/phone_tabGroup" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dip66" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@+id/phone_radio0" android:background="@drawable/phone_first_tab_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="true" android:button="@null" android:layout_weight="1.0" />
+        <RadioButton android:id="@+id/phone_radio1" android:background="@drawable/phone_second_tab_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:layout_weight="1.0" />
+        <RadioButton android:id="@+id/phone_radio2" android:background="@drawable/phone_three_tab_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:layout_weight="1.0" />
+    </RadioGroup>
+</RelativeLayout>

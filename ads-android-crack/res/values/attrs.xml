@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="StringToShow" format="reference" />
+    <attr name="TextSize" format="dimension" />
+    <attr name="TextColor" format="integer" />
+    <attr name="SlideColor" format="integer" />
+    <attr name="MinVelocityXToUnlock" format="integer" />
+    <attr name="MinDistanceToUnlock" format="integer" />
+    <attr name="LeftAnimationDuratioin" format="integer" />
+    <attr name="RightAnimationDuratioin" format="integer" />
+</resources>

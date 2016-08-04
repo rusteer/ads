@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.MarketListView android:scrollbarStyle="outsideOverlay" android:id="@+id/comment_listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/comment_lay" />
+    <RelativeLayout android:id="@+id/comment_lay" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true">
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="17.0dip" android:layout_above="@+id/comment_btn" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@+id/comment_btn" android:background="@drawable/download_1_bg" android:layout_width="240.0dip" android:layout_height="34.0dip" android:layout_margin="10.0dip" android:text="我要评论" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

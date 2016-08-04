@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/share_icon" android:layout_width="@dimen/dip65" android:layout_height="@dimen/dip65" android:src="@drawable/cp_defaulf" android:scaleType="center" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@+id/share_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="app名" android:layout_below="@id/share_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/jsp/layouts/">
+    <excludes>
+        <pattern>/static/*</pattern>
+        <pattern>/api/*</pattern>
+        <pattern>/account/*</pattern>
+        <pattern>/favicon.ico</pattern>
+    </excludes>
+
+    <decorator name="default" page="default.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>

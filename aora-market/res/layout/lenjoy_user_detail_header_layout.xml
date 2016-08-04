@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:wei="http://schemas.android.com/apk/res/com.gionee.aora.market">
+    <LinearLayout android:orientation="vertical" android:background="@color/lenjoy_user_detail_color" android:layout_width="fill_parent" android:layout_height="141.69998dip">
+        <com.gionee.aora.market.gui.view.CircleCornerImageView android:layout_gravity="center_horizontal" android:id="@+id/lenjoy_user_detail_icon" android:layout_width="75.0dip" android:layout_height="75.0dip" wei:borderWidth="2.0dip" wei:borderColor="#ffffffff" wei:type="circle" wei:src="@drawable/lenjoy_default_icon" />
+        <TextView android:textSize="16.699982dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/lenjoy_user_detail_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="芭比哇哇" />
+        <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.699982dip" android:textColor="@color/white" android:gravity="center" android:id="@+id/lenjoy_user_detail_praise" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="30" android:drawableLeft="@drawable/user_detail_praise" android:drawablePadding="2.0dip" />
+            <TextView android:textSize="12.699982dip" android:textColor="@color/white" android:gravity="center" android:id="@+id/lenjoy_user_detail_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="5" android:drawableLeft="@drawable/user_detail_lenjoy" android:drawablePadding="2.0dip" android:layout_toRightOf="@+id/lenjoy_user_detail_praise" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/lenjoy_user_detail_divide" android:background="@color/main_bg1" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/lenjoy_user_detail_nullLyt" android:background="@color/main_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@+id/show_error_img" android:background="@drawable/no_download_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffaaaaaa" android:id="@+id/show_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="该用户还没有乐享数据" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/software_update_heard" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:id="@+id/software_update_cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:text="取消" android:layout_centerVertical="true" />
+        <CheckBox android:id="@+id/software_update_all_checkbox" android:padding="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/conven_checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip7" android:text="全选" android:layout_toLeftOf="@+id/software_update_all_checkbox" android:layout_centerVertical="true" />
+        <View android:background="#ffcecece" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/black" android:gravity="center" android:id="@+id/software_update_longhint" android:background="#fff6eedc" android:layout_width="fill_parent" android:layout_height="@dimen/dip47" android:text="长按更新应用进入多选模式" android:layout_below="@id/software_update_heard" />
+    <com.gionee.aora.market.gui.view.MarketExpandListView android:scrollbarStyle="outsideOverlay" android:id="@+id/software_update_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="0.0dip" android:layout_above="@+id/software_update_footer" android:layout_below="@id/software_update_longhint" />
+    <RelativeLayout android:id="@+id/software_update_footer" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="113.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/main_bottombar_shadow" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:id="@+id/software_update_all_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginTop="17.0dip" android:text="已选择0个，共0MB" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/dip47" android:layout_marginLeft="@dimen/dip20" android:layout_marginTop="17.0dip" android:layout_marginRight="@dimen/dip20" android:layout_below="@id/software_update_all_size">
+            <TextView android:textSize="21.0dip" android:textColor="@color/black" android:gravity="center" android:id="@+id/software_update_all_ignore" android:background="@drawable/bord_black" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="忽略" android:layout_weight="1.0" />
+            <TextView android:textSize="21.0dip" android:textColor="@color/white" android:gravity="center" android:id="@+id/software_update_all_update" android:background="@drawable/bord_green" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="28.0dip" android:text="一键更新" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

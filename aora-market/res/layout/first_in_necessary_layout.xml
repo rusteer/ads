@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/necessary_top_lay" android:background="@drawable/first_necessary_bg" android:layout_width="fill_parent" android:layout_height="101.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="317.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/necceary_top_img" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip">
+            <LinearLayout android:gravity="center" android:id="@+id/necessary_new_check_all_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+                <CheckBox android:id="@+id/necessary_new_check_all_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/setting_radiobutton_selector" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="全选" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/necessary_checked_info_textview" android:background="@drawable/bord_white" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="188.0dip" android:layout_height="wrap_content" android:text="未选择应用" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/necessary_bottom_lay" android:layout_width="fill_parent" android:layout_height="79.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="20.0dip" android:textColor="@color/black" android:id="@+id/necessary_skip_btn" android:background="@drawable/discount_center_finish_btn" android:layout_width="140.0dip" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:text="跳过" android:layout_centerVertical="true" />
+        <Button android:textSize="20.0dip" android:textColor="@color/white" android:id="@+id/necessary_install_all_btn" android:background="@drawable/btn_green_bg" android:layout_width="147.0dip" android:layout_height="45.0dip" android:layout_marginRight="15.0dip" android:text="一键安装" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.gionee.aora.market.gui.view.MarketExpandListView android:scrollbarStyle="outsideOverlay" android:id="@+id/necessaryExpandListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:childDivider="@drawable/driver_color" android:divider="@null" android:layout_above="@+id/necessary_bottom_lay" android:layout_below="@id/necessary_top_lay" />
+    <View android:id="@+id/necessary_bottom_line" android:background="@drawable/main_bottombar_shadow" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_above="@+id/necessary_bottom_lay" />
+</RelativeLayout>

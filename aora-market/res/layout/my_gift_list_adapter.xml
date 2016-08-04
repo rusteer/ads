@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="95.0dip">
+        <Button android:textSize="13.299988dip" android:textColor="@color/white" android:id="@+id/my_gift_item_copy_code_btn" android:background="@drawable/gift_copy_btn_selector" android:layout_width="83.899994dip" android:layout_height="25.299988dip" android:layout_marginRight="11.599976dip" android:text="复制激活码" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/my_gift_item_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="11.299988dip" android:src="@drawable/cp_defaulf" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:ellipsize="end" android:id="@+id/my_gift_item_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="易欣斯蒂芬" android:singleLine="true" android:layout_toRightOf="@+id/my_gift_item_icon" android:layout_alignTop="@id/my_gift_item_icon" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/gray" android:ellipsize="end" android:id="@+id/my_gift_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="易欣斯蒂芬斯蒂芬" android:singleLine="true" android:layout_alignLeft="@+id/my_gift_item_appname" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/my_gift_item_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="激活码: 1900" android:singleLine="true" android:layout_alignLeft="@+id/my_gift_item_name" android:layout_alignBottom="@id/my_gift_item_icon" />
+    </RelativeLayout>
+</RelativeLayout>

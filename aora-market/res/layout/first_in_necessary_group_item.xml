@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/necessary_new_group_title_lay" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/necessary_new_theme_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:text="聊天通讯" android:layout_centerVertical="true" />
+        <CheckBox android:id="@+id/necessary_new_theme_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@drawable/conven_checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

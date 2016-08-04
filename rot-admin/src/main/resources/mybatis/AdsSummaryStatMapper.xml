@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.rot.repository.mybatis.AdsSummaryStatRepositoryMyBatis">
+	<select id="getStat" parameterType="map" resultType="com.rot.entity.AdsSummaryStatEntity">
+		select  a.stat_date as statDate,
+				sum(a.activate_count) as activateCount,
+				sum(a.retention_count) as retentionCount
+		from ads_summary_stat a 		
+		<where>
+			a.ads_id>1
+			<if test="adsId != null">and a.ads_id=#{adsId}</if>
+			<if test="fromDate != null">and a.stat_date>=#{fromDate}</if>
+			<if test="toDate != null"><![CDATA[ and a.stat_date <=#{toDate}]]></if>	
+		</where>
+		group by statDate order by statDate desc
+	</select>
+</mapper>

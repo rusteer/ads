@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ResultButton" parent="@*android:style/Widget.Button.Small">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ShareButton" parent="@*android:style/Widget.Button.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CaptureTheme" parent="@*android:style/Theme.Holo">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="Theme_Dialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme_lottery_Dialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="my_edittext_style" parent="@*android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_selector</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+    </style>
+    <style name="Float_Dialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Float_Dialog_style" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/float_dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/float_dialog_exit_anim</item>
+    </style>
+    <style name="pop_desktop_dialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Dialog</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="button_style">
+        <item name="android:textColor">@color/button_textcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+    <style name="sign_in_button_style">
+        <item name="android:textColor">@color/manager_sign_in_button_textcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/manager_sign_in_bg</item>
+    </style>
+    <style name="main_tab_bottom">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">0.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableTop">@null</item>
+        <item name="android:drawableBottom">@null</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:drawableRight">@null</item>
+        <item name="android:drawablePadding">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Button_white_introduction_small_open" parent="@*android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:background">@drawable/manager_list_button</item>
+    </style>
+    <style name="foodRatingBar" parent="@*android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+    </style>
+    <style name="foodRatingBar2" parent="@*android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable2</item>
+    </style>
+    <style name="foodRatingBar1" parent="@*android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable1</item>
+    </style>
+    <style name="commentRatingBar" parent="@*android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/comment_ratingbar_drawable</item>
+    </style>
+    <style name="DialogNoTile" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="TitleText" parent="@*android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="CustomDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowTitleStyle">@style/TitleStyle</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="TitleStyle" parent="@*android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textAppearance">@style/TitleText</item>
+    </style>
+    <style name="feedback_RadioButton">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff5d5d5d</item>
+        <item name="android:paddingLeft">30.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:button">@drawable/soft_problem_onekey_selector</item>
+    </style>
+    <style name="ApplicationStyle" parent="@*android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@drawable/loading</item>
+    </style>
+    <style name="CustomDialogNoTile" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="BookDialogNoTile" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Popu_Desktop_Dialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Transparent" parent="@*android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="NotificationContent">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="NotificationTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+</resources>

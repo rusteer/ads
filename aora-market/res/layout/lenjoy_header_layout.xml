@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/lenjoy_top_lay" android:layout_width="fill_parent" android:layout_height="42.299988dip">
+        <RelativeLayout android:gravity="center" android:id="@+id/my_lenjoy_btn" android:background="@drawable/list_item_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/my_lenjoy_btn_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/my_lenjoy_up" android:contentDescription="@null" />
+            <TextView android:textSize="13.299988dip" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="我的" android:layout_toRightOf="@+id/my_lenjoy_btn_image" />
+        </RelativeLayout>
+        <View android:background="@drawable/driver_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <RelativeLayout android:gravity="center" android:id="@+id/lenjoy_top_best_btn" android:background="@drawable/list_item_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/lenjoy_top_best_btn_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/lenjoy_best_up" android:contentDescription="@null" />
+            <TextView android:textSize="13.299988dip" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="精华" android:layout_toRightOf="@+id/lenjoy_top_best_btn_image" />
+        </RelativeLayout>
+        <View android:background="@drawable/driver_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <RelativeLayout android:gravity="center" android:id="@+id/lenjoy_top_edit_btn" android:background="@drawable/list_item_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/lenjoy_top_edit_btn_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/lenjoy_edit_up" android:contentDescription="@null" />
+            <TextView android:textSize="13.299988dip" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="发表" android:layout_toRightOf="@+id/lenjoy_top_edit_btn_image" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/lenjoy_top_lay" />
+</RelativeLayout>

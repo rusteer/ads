@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/soft_list_btn_background" />
+            <corners android:topLeftRadius="6.5999756dip" android:topRightRadius="6.5999756dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@*android:color/transparent" />
+        </shape>
+    </item>
+</selector>

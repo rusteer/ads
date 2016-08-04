@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@+id/soft_installed_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="@color/white" android:groupIndicator="@null" android:childDivider="@drawable/driver_color" android:dividerHeight="0.0dip" android:layout_above="@+id/soft_installed_end" />
+    <RelativeLayout android:id="@+id/soft_installed_end" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_alignParentBottom="true">
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="@dimen/px1" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@+id/soft_installed_str" android:background="@drawable/bord_green" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/dip30" android:layout_marginTop="@dimen/dip20" android:layout_marginRight="@dimen/dip30" android:layout_marginBottom="@dimen/dip20" android:text="@string/installed_end" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

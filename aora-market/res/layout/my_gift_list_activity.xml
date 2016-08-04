@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.MarketListView android:scrollbarStyle="outsideOverlay" android:id="@+id/my_gift_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_gifts_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="96.599976dip" android:layout_height="96.599976dip" android:src="@drawable/no_my_gifts" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.599976dip" android:textColor="#ff525252" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="还没有领取过礼包,现在就去领取吧" />
+        <Button android:textSize="16.599976dip" android:textColor="#ffffffff" android:id="@+id/go_to_all_gifts_btn" android:background="@drawable/gift_copy_btn_selector" android:layout_width="179.29999dip" android:layout_height="40.599976dip" android:layout_marginTop="5.0dip" android:text="所有礼包" />
+    </LinearLayout>
+</RelativeLayout>

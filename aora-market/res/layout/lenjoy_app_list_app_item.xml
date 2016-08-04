@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/detail_header_app" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="78.69998dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/detail_app_icon" android:layout_width="57.0dip" android:layout_height="57.0dip" android:layout_margin="11.0dip" android:src="@drawable/cp_defaulf" android:layout_centerVertical="true" />
+    <com.gionee.aora.market.gui.download.view.DownloadProgressButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/detail_act_button" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:id="@+id/detail_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="APPNAME" android:singleLine="true" android:layout_toLeftOf="@+id/detail_act_button" android:layout_toRightOf="@+id/detail_app_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

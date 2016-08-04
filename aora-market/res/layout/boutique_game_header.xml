@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.MarketGallery android:gravity="fill_vertical" android:id="@+id/game_banner" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gionee.aora.market.gui.view.ImageIndicateLayout android:id="@+id/game_banner_indicate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-12.0dip" android:layout_marginRight="3.0dip" android:layout_below="@id/game_banner" android:layout_alignParentRight="true" />
+</RelativeLayout>

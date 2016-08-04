@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/content_bg" android:paddingLeft="14.299988dip" android:paddingTop="19.299988dip" android:paddingRight="14.299988dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="13.299988dip" android:textColorHint="@color/hint_text_color" android:id="@+id/bind_name1" android:background="@drawable/user_edittext_bg" android:paddingLeft="11.699982dip" android:layout_width="fill_parent" android:layout_height="37.69998dip" android:hint="@string/t_register_phone_hint" android:singleLine="true" android:maxLength="11" android:inputType="phone" />
+    <LinearLayout android:id="@+id/bind_code_lay" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="29.0dip" android:layout_below="@id/bind_name1">
+        <EditText android:textSize="13.299988dip" android:textColorHint="@color/hint_text_color" android:layout_gravity="center_vertical" android:id="@+id/bind_code_et" android:background="@drawable/user_edittext_bg" android:paddingLeft="11.699982dip" android:layout_width="0.0dip" android:layout_height="37.69998dip" android:hint="@string/t_register_code_hint" android:singleLine="true" android:layout_weight="2.0" android:inputType="number" />
+        <Button android:textSize="16.699982dip" android:textColor="@color/white" android:id="@+id/bind_code_btn" android:background="@drawable/login_cancel_btn_select" android:layout_width="0.0dip" android:layout_height="41.69998dip" android:layout_marginLeft="15.0dip" android:text="@string/t_code" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:textSize="20.0dip" android:textColor="@color/black" android:id="@+id/bindok1" android:background="@drawable/orange_button_selector" android:layout_width="fill_parent" android:layout_height="41.69998dip" android:layout_marginLeft="23.699982dip" android:layout_marginTop="50.0dip" android:layout_marginRight="23.699982dip" android:text="完成" android:layout_below="@id/bind_code_lay" android:onClick="onPerfection" />
+</RelativeLayout>

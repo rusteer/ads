@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scroll" android:background="#ffeeeeee" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/receive_info" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fff62a2a" android:gravity="center" android:id="@+id/flag1" android:layout_width="10.0dip" android:layout_height="fill_parent" android:text="*" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="right|center" android:paddingLeft="15.0sp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/receiver_name" />
+            <EditText android:textSize="16.0sp" android:textColor="#ff3a3a3a" android:gravity="center_vertical" android:id="@+id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="收货人姓名" android:maxLength="10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fff62a2a" android:gravity="center" android:id="@+id/flag5" android:layout_width="10.0dip" android:layout_height="40.0dip" android:text="*" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="right|center" android:id="@+id/tv2_1" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/adress" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ln5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:textColor="#ff3a3a3a" android:id="@+id/province_sp" android:background="@drawable/spinner_selector" android:paddingLeft="5.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:text="省" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <Spinner android:textColor="#ff3a3a3a" android:id="@+id/city_sp" android:background="@drawable/spinner_selector" android:paddingLeft="5.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:text="市" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fff62a2a" android:gravity="center" android:id="@+id/flag2" android:layout_width="10.0dip" android:layout_height="wrap_content" android:text="*" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adress_detail" />
+            <EditText android:textSize="16.0sp" android:textColor="#ff3a3a3a" android:gravity="center_vertical" android:id="@+id/adress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="街道名称/编号 楼宇名称单位房间" android:singleLine="true" android:lineSpacingExtra="-2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fff62a2a" android:gravity="center" android:id="@+id/flag3" android:layout_width="10.0dip" android:layout_height="wrap_content" android:text=" " />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_code" />
+            <EditText android:textSize="16.0sp" android:textColor="#ff3a3a3a" android:gravity="center_vertical" android:id="@+id/postcode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="如:518000" android:singleLine="true" android:maxLength="6" android:digits="0123456789" android:lineSpacingExtra="-2.0dip" android:inputType="numberDecimal" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fff62a2a" android:gravity="center" android:id="@+id/flag4" android:layout_width="10.0dip" android:layout_height="wrap_content" android:text="*" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_num" />
+            <EditText android:textSize="16.0sp" android:textColor="#ff3a3a3a" android:gravity="center_vertical" android:id="@+id/phonenum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="常用手机号码" android:maxLength="13" android:digits="0123456789" android:lineSpacingExtra="-2.0dip" android:inputType="phone" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#fff62a2a" android:gravity="center" android:id="@+id/flag6" android:layout_width="10.0dip" android:layout_height="wrap_content" android:text=" " />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ln6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <EditText android:textSize="12.0sp" android:textColor="#ff3a3a3a" android:gravity="center_vertical" android:id="@+id/phone_et_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="区号" android:maxLength="4" android:digits="0123456789" android:layout_weight="1.2" android:lineSpacingExtra="-2.0dip" android:inputType="phone" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="-" />
+                <EditText android:textSize="12.0sp" android:textColor="#ff3a3a3a" android:gravity="center_vertical" android:id="@+id/phone_et_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="电话号码" android:maxLength="10" android:digits="0123456789" android:layout_weight="1.0" android:lineSpacingExtra="-2.0dip" android:inputType="phone" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="-" />
+                <EditText android:textSize="12.0sp" android:textColor="#ff3a3a3a" android:gravity="center_vertical" android:id="@+id/phone_et_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="分机号" android:singleLine="true" android:maxLength="8" android:digits="0123456789" android:layout_weight="1.2" android:lineSpacingExtra="-2.0dip" android:inputType="phone" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@+id/commitbtn" android:background="@drawable/exchange_btn_slt" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:text="@string/exchange_commit" />
+    </LinearLayout>
+</ScrollView>

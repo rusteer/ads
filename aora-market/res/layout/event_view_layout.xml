@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="205.0dip" android:layout_height="90.0dip" android:minWidth="205.0dip" android:minHeight="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/event_view_icon" android:layout_width="198.0dip" android:layout_height="82.69998dip" android:layout_marginLeft="7.0dip" android:src="@drawable/ad_default_banner" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@+id/event_view_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/special_list_event_flag" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

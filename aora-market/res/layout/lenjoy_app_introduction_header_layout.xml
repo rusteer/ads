@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:wei="http://schemas.android.com/apk/res/com.gionee.aora.market">
+    <RelativeLayout android:id="@+id/lenjoy_top_lay" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="62.0dip">
+        <com.gionee.aora.market.gui.view.CircleCornerImageView android:id="@+id/lenjoy_user_icon" android:layout_width="50.599976dip" android:layout_height="55.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" wei:borderWidth="2.0dip" wei:borderColor="#ffffffff" wei:type="circle" wei:src="@drawable/lenjoy_default_icon" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@+id/lenjoy_user_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/lenjoy_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="WIN" android:singleLine="true" />
+            <TextView android:textSize="12.699982dip" android:textColor="@color/softlist_new_txt_color" android:gravity="center_vertical" android:id="@+id/lenjoy_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="2014-05-29" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="13.299988dip" android:textColor="#ff555555" android:id="@+id/detail_app_description" android:background="@color/main_bg" android:paddingLeft="14.0dip" android:paddingRight="11.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="描述描述描述描述描述描述描述描述描述描述" />
+    <RelativeLayout android:id="@+id/detail_header_app" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="69.29999dip">
+        <ImageView android:id="@+id/detail_app_icon" android:layout_width="57.0dip" android:layout_height="57.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/cp_defaulf" android:layout_centerVertical="true" />
+        <com.gionee.aora.market.gui.download.view.DownloadProgressButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/detail_act_button" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:id="@+id/detail_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="APPNAME" android:singleLine="true" android:layout_toLeftOf="@+id/detail_act_button" android:layout_toRightOf="@+id/detail_app_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.gionee.aora.market.gui.details.view.ScreenShotHorizontalScrollView android:scrollbarThumbHorizontal="@drawable/screen_shot_line_shape" android:scrollbarAlwaysDrawHorizontalTrack="false" android:id="@+id/lenjoy_detail_screen_shot" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="214.0dip" android:fadeScrollbars="false" />
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/detail_app_description_title_layout" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <View android:background="@color/title_bg_color" android:layout_width="4.0dip" android:layout_height="16.0dip" android:layout_marginTop="17.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:id="@+id/lenjoy_app_detail_command" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="14.0dip" android:text="评论" />
+    </RelativeLayout>
+</LinearLayout>

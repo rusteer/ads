@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/main_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:wei="http://schemas.android.com/apk/res/com.gionee.aora.market">
+    <RelativeLayout android:id="@+id/title_bar" android:background="#ffb7d3ae" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <RelativeLayout android:id="@+id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/title_back_img" android:background="@drawable/manager_title_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="管理中心" android:singleLine="true" android:maxLength="10" android:layout_toRightOf="@+id/title_back_img" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/title_setting_img" android:layout_width="40.0dip" android:layout_height="36.669983dip" android:layout_marginRight="5.3299866dip" android:src="@drawable/manager_center_setting" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/title_message_img" android:layout_width="43.0dip" android:layout_height="36.669983dip" android:src="@drawable/manager_msg_center" android:scaleType="centerInside" android:layout_toLeftOf="@+id/title_setting_img" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/title_massage_count" android:background="@drawable/manager_msg_count" android:visibility="gone" android:layout_width="16.669983dip" android:layout_height="16.669983dip" android:text="88" android:singleLine="true" android:layout_alignTop="@id/title_message_img" android:layout_alignRight="@id/title_message_img" />
+    </RelativeLayout>
+    <ScrollView android:id="@+id/manag_small_scrollview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="#ffb7d3ae" android:layout_width="fill_parent" android:layout_height="135.0dip">
+                <com.gionee.aora.market.gui.view.CircleCornerImageView android:layout_gravity="center_horizontal" android:id="@+id/icon_view" android:layout_width="80.0dip" android:layout_height="80.0dip" wei:borderWidth="3.3299866dip" wei:borderColor="#ffffffff" wei:type="circle" wei:src="@drawable/integral_main_usericon" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:ellipsize="middle" android:gravity="center" android:id="@+id/username" android:background="#ffb7d3ae" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="点击登陆" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/num_layer" android:background="#d9b7d3ae" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/coin_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="14.599976dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/coin_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:singleLine="true" android:drawableLeft="@drawable/manager_center_coin_large" android:drawablePadding="6.669983dip" />
+                </LinearLayout>
+                <View android:background="#ffcee1c8" android:layout_width="1.0px" android:layout_height="27.329987dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/integral_lejoy_count_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="14.599976dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/integral_lejoy_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:drawableLeft="@drawable/integral_my_lejoy" android:drawablePadding="6.669983dip" />
+                </LinearLayout>
+                <View android:background="#ffcee1c8" android:layout_width="1.0px" android:layout_height="27.329987dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/integral_gift_count_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="14.599976dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/integral_gift_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:drawableLeft="@drawable/integral_my_gift" android:drawablePadding="6.669983dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/manager_account_erro_layer" android:background="#ffb7d3ae" android:paddingLeft="22.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@+id/erro_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="账号异常" android:singleLine="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@+id/erro_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="您昂好已经被冻结，详情请咨询客服" android:singleLine="true" android:layout_below="@id/erro_title" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@+id/erro_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="为您带来不便请谅解！" android:singleLine="true" android:layout_below="@id/erro_text_1" android:layout_alignLeft="@+id/erro_text_1" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@+id/call_btn" android:background="@drawable/integral_phone_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="-5.0dip" android:layout_toRightOf="@+id/erro_text_2" android:layout_alignBottom="@id/erro_text_2" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/getmoney_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="73.29999dip">
+                <TextView android:textSize="18.599976dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:text="赚取金币" android:layout_centerVertical="true" />
+                <Button android:textColor="@color/manage_sign_button_textcolor" android:id="@+id/to_sign_in_btn" android:background="@drawable/manage_sign_button_bg" android:layout_width="86.599976dip" android:layout_height="37.299988dip" android:layout_marginRight="13.299988dip" android:text="签  到" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/app_update_layer" android:background="@drawable/list_item_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="73.599976dip">
+                <TextView android:textSize="18.599976dip" android:textColor="#ff666666" android:id="@+id/update_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:text="软件更新" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@+id/update_layer" android:paddingTop="9.329987dip" android:paddingRight="7.3299866dip" android:paddingBottom="9.329987dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/update_text" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/app_update_icon_0" android:background="@drawable/cp_defaulf" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" />
+                    <ImageView android:id="@+id/app_update_icon_1" android:background="@drawable/cp_defaulf" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.2999878dip" android:layout_toRightOf="@+id/app_update_icon_0" />
+                    <ImageView android:id="@+id/app_update_icon_2" android:background="@drawable/cp_defaulf" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.2999878dip" android:layout_toRightOf="@+id/app_update_icon_1" />
+                </LinearLayout>
+                <TextView android:textSize="13.299988dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/app_update_count_tv" android:background="@drawable/manager_update_count" android:visibility="gone" android:layout_width="18.669983dip" android:layout_height="18.669983dip" android:text="88" android:singleLine="true" android:layout_alignTop="@id/update_layer" android:layout_alignRight="@id/update_layer" />
+                <Button android:id="@+id/to_update_btn" android:layout_width="86.599976dip" android:layout_height="37.299988dip" android:layout_marginRight="13.299988dip" android:text="一键更新" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_style" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/non_update_bar" android:background="@drawable/list_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.599976dip">
+                <ImageView android:background="@drawable/manager_non_update_bar_icon" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_marginLeft="13.299988dip" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="软件更新" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="220.66998dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lottery_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每日抽奖" android:drawableLeft="@drawable/integral_lottery_icon" android:drawablePadding="13.299988dip" />
+                    </LinearLayout>
+                    <View android:background="#ffdddddd" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/mall_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金币市集" android:drawableLeft="@drawable/integral_tmall_icon" android:drawablePadding="13.299988dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/free_call_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费电话" android:drawableLeft="@drawable/integral_free_call_icon" android:drawablePadding="13.299988dip" />
+                    </LinearLayout>
+                    <View android:background="#ffdddddd" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/free_wifi_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费WIFI" android:drawableLeft="@drawable/manager_center_freewifi" android:drawablePadding="13.299988dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/app_uninstall_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="软件卸载" android:drawableLeft="@drawable/manager_center_uninstall" android:drawablePadding="13.299988dip" />
+                    </LinearLayout>
+                    <View android:background="#ffdddddd" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/feed_back_btn" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="意见反馈" android:drawableLeft="@drawable/manager_center_feedback" android:drawablePadding="13.299988dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

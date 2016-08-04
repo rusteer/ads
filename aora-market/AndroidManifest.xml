@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="7100" android:versionName="7100.3000" android:installLocation="internalOnly" package="com.gionee.aora.market"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!--  -->
+    <permission android:name="com.gionee.aora.market.permission.SYSTEM_ACCESS" android:protectionLevel="signature" />
+    <permission android:name="com.jinli.c2u.permission.C2D_MESSAGE" android:protectionLevel="normal" />
+    <!--  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.jinli.c2u.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.gionee.aora.market.permission.SYSTEM_ACCESS" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_MISS_INFO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-sdk android:minSdkVersion="8"/>
+    <application android:theme="@*android:style/Theme.NoTitleBar" android:label="@string/shortcut_name" android:icon="@drawable/icon" android:name="com.gionee.aora.market.MarketApplication" android:debuggable="false" android:allowBackup="true">
+        <activity android:theme="@style/ApplicationStyle" android:label="@string/shortcut_name" android:name="com.gionee.aora.market.GoApkLoginAndRegister" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.APP_MARKET" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.main.MainNewActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.gionee.aora.market.gui.login.NewbieGuideActivity2" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.gionee.aora.market.gui.login.GuideActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.download.DownloadManagerActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.gui.ebook.action.DownloadManagerActivity" />
+                <action android:name="com.gionee.aora.market.downloadManager" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.manager.SoftwareUpdateActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.SoftwareUpdateActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.manager.SoftwareIgnoreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.manager.SoftInstalledActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.manager.NoNetUpdateActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.home.NewestActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.gionee.aora.market.gui.details.IntroductionVideoActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.special.PrefectureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.special.SpecialInfomationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.SpecialInfomationActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.view.NetErrorDialog" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.NetErrorDialog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.view.SignDifferentDialog" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.SignDifferentDialog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.view.SetAutoDownloadDialog" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.SetAutoDownloadDialog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.view.UserChangeDialog" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.special.ExerciseInfomationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.ExerciseInfomationActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Transparent" android:name="com.gionee.aora.market.gui.evaluation.EvaluationDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.Evaluationctivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.evaluation.EvaluationListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Transparent" android:name="com.gionee.aora.market.gui.exercise.ExerciseDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.ExerciseDetailsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.exercise.ExerciseListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.exercise.ExerciseAndSpecialActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.ExerciseAndSpecialActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.gift.GiftDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.GiftDetailsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.gift.GiftListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.GiftListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.gift.MyGiftActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.MyGiftActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.lottery.LotteryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.lottery.LotteryNewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.rank.IntegralRankActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.strategy.IntegralStrategyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.centre.PersonCentreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.centre.ExchangeRecordActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.centre.GoldRecordActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="com.gionee.aora.market.gui.view.NetErrorDialogActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="com.gionee.aora.integral.gui.view.NetErrorDialogActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="com.gionee.aora.market.gui.view.ReDownloadDialogActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.view.ReDownloadDialog" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.ReDownloadDialog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.view.ShowCreatNewApkErrorDialog" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.ShowCreatNewApkErrorDialog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="com.gionee.aora.market.gui.view.InstallCheckSignDialog">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.view.GprsLimtDialog" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.view.MemoryDialog" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.necessary.NecessaryNewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.necessary.FirstInNecessaryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.gionee.aora.market.gui.details.IntroductionDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.GoSoftIntroductionActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="market" android:host="details" android:path="" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gionee.aora.market.gui.details.IntroductionCommentActivy" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.gionee.aora.market.gui.details.IntroductionAllCommnentsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.gionee.aora.market.gui.details.view.FullScreenShotsActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.gionee.aora.market.gui.search.SearchActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.gui.search.action.SearchActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="market" android:host="search" android:path="" />
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.gionee.aora.market.gui.GoMarketSearchResultActivity" android:targetActivity="com.gionee.aora.market.gui.search.SearchActivity" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.GoMarketSearchResult" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+        <receiver android:name="com.gionee.aora.market.util.InstallApkReceiver">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.INSTALLAPK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name="com.gionee.aora.market.gui.ebook.InitEbookActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.gui.ebook.action.InitEbookActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.gionee.aora.market.control.SoftwareReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.gionee.aora.market.control.UpdateCountReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.gionee.aora.market.util.NotifyBtnClickReceiver">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.NOTIFY_UPDATE_ALLBTN_CLICK_ACTION" />
+                <action android:name="com.gionee.aora.market.ACTION_NOTIFY_INSTALL_ALL_BTN_CLICK" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.manager.MarketAboutActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.special.SpecialListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.manager.MarketFeedbackActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.manager.MarketSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.application.SubjectActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.details.IntroductionProblemActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyEditActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyChoiseAppActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyAppChoiseAppActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.MyLenjoyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyBoutiqueActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <service android:name="com.gionee.aora.market.control.AutoUpdateService" />
+        <activity android:theme="@style/CustomDialog" android:name="com.gionee.aora.market.gui.update.UpdateDialogActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.integral.IntegralAppListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.action.IntegralAppListActivity" />
+                <action android:name="com.gionee.aora.market.gui.integral.IntegralAppListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.view.LableItemListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <receiver android:name="com.gionee.aora.market.control.IntegralReceiver">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.control.IntegralReceiver.appinstalled" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.gionee.aora.fihs.controler.ControlerReceiver" android:process=":service">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.gionee.aora.fihs.controler.ControlerService" android:process=":service" />
+        <receiver android:name="com.gionee.aora.fihs.fihs.communication.C2DReceiver" android:permission="com.jinli.c2u.permission.C2D_MESSAGE" android:process=":service">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.MESSAGE" />
+                <category android:name="com.gionee.aora.market" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.REGISTRATION" />
+                <category android:name="com.gionee.aora.market" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.gionee.aora.fihs.fihs.MessageHandlerService" android:process=":service" />
+        <receiver android:name="com.gionee.aora.fihs.fihs.FihsConnReceiver" android:process=":service">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.gionee.aora.fihs.fihs.FihsDownloadService" android:process=":service" />
+        <service android:name="com.jinli.c2u.service.RegistrationService" android:process=":service">
+            <intent-filter>
+                <action android:name="com.jinli.c2u.intent.REGISTER" />
+                <action android:name="com.jinli.c2u.intent.UNREGISTER" />
+            </intent-filter>
+        </service>
+        <service android:name="com.jinli.c2u.service.CService" android:process=":service">
+            <intent-filter>
+                <action android:name="com.jinli.c2u.intent.START_FIHS_SERVICE" />
+                <action android:name="com.jinli.c2u.intent.STOP_FIHS_SERVICE" />
+                <action android:name="com.jinli.c2u.intent.RESTART_FIHS_SERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name="com.jinli.c2u.service.SubscriptionService" android:process=":service">
+            <intent-filter>
+                <action android:name="com.jinli.c2u.intent.SUBSCRIBE" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.jinli.c2u.receiver.SystemEventReceiver" android:process=":service">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" android:path="com.jinli.c2u" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jinli.c2u.receiver.ParametersSyncReceiver" android:process=":service">
+            <intent-filter>
+                <action android:name="com.jinli.c2u.sync.SYNC_PARAMS" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.jinli.c2u.communication.JinliAidlService" android:process=":service">
+            <intent-filter>
+                <action android:name="com.jinli.c2u.aidlService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.gionee.aora.fihs.fihs.CountBroadcastReceiver" android:process=":service">
+            <intent-filter>
+                <action android:name="com.gionee.aora.fihs.fihs.CountBroadcastReceiver.first" />
+                <action android:name="com.gionee.aora.fihs.fihs.CountBroadcastReceiver.fihs" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.google.zxing.client.android.CaptureActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.Zxing.Demo.action.CaptureActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.gionee.aora.market.control.QRCodeManager">
+            <intent-filter>
+                <action android:name="com.Zxing.Demo.CaptureActivity.scanfinish" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.gionee.aora.market.database.SoftwareUpdateProvider" android:authorities="com.gionee.aora.market" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.exchange.ExchangeCenter" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.exchange.QCoinExchange" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.exchange.PhoneChargesExchange" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.exchange.ItemExchange" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.exchange.ItemExchangeMain" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <provider android:name="com.gionee.aora.integral.control.UserFileProvider" android:authorities="com.gionee.aora.user" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.login.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.register.RegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.register.PerfectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.integral.IntegralGetMoney" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.person.PersonActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.person.ProvinceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.person.CityActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.person.UpdatePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.findpwd.ForgetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.question.QuestionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.findpwd.FindPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.findpwd.PhoneFindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.findpwd.EmailFindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.address.AddressEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.findpwd.ModifyPhoneFirstStep" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.person.UnbundleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.person.PhoneBindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.integral.gui.person.EmailBindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.integral.IntegralGetMoneyPlayGame" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.integral.DisCountCenter" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <receiver android:name="com.gionee.aora.market.control.NotLaunchManager">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.control.NotLaunchManager.repeate" />
+                <action android:name="com.gionee.aora.market.control.NotLaunchManager.notifyclick" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Float_Dialog" android:name="com.gionee.aora.market.gui.recommend.PersonalRecommandActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.special.EventsInformationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.game.FreeGameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="com.gionee.aora.market.gui.integral.PaintEggTipDialog" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/CustomDialogNoTile" android:name="com.gionee.aora.market.gui.integral.PaintEggAnimatDialog" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.game.ClassifyDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.game.ClassifyLableDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.gionee.aora.market.wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.gionee.aora.market.gui.share.ShareActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.gionee.aora.market.gui.lenjoy.LenjoyAppRotateCoverActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyEditAppActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.call.BoundPhoneActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.call.FreePhoneActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.call.CallExchange" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.call.PhoneActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyAppDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyAppListDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyUserDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.call.CallHelp" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.search.SearchResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.game.ClassifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.special.IndividuationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.integral.ManagerActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.gionee.aora.market.gui.integral.ManagerActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.application.DownloadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.application.SoarActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.lenjoy.LenjoyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.special.SuperSpecialActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.voicesearch.VoiceSearchDialog" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.gionee.aora.market.gui.messagecenter.MessageCenterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+    </application>
+</manifest>

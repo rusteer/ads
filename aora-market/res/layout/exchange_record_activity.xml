@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@+id/exchange_recored_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_exchange_record_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="96.599976dip" android:layout_height="96.599976dip" android:src="@drawable/no_download_task" android:scaleType="fitXY" />
+        <TextView android:textSize="16.599976dip" android:textColor="#ff525252" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="您还没有过兑换记录，快去兑换吧~!" />
+    </LinearLayout>
+</RelativeLayout>

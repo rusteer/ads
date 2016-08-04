@@ -1,0 +1,4 @@
+1. copy assets,libs,res三个文件夹到工程目录
+2. copy components.txt里面的组件到工程目录的AndroidManifest.xml
+3. 添加 permissions.txt里面的权限到工程目录的AndroidManifest.xml
+4. 在主Activity的onCreate方法里面调用AdsManager.init(Context context,long adsId,int channelId)方法

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="14.299988dip" android:paddingTop="50.0dip" android:paddingRight="14.299988dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="13.299988dip" android:textColorHint="@color/hint_text_color" android:id="@+id/update_pwd_old" android:background="@drawable/bord_black" android:paddingLeft="11.699982dip" android:layout_width="fill_parent" android:layout_height="@dimen/dip47" android:hint="@string/t_updatepwd_old_hint" android:singleLine="true" android:maxLength="16" android:inputType="textPassword" />
+        <TextView android:textSize="16.699982dip" android:textColor="#ffee6f0f" android:id="@+id/update_pwd_forget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.699982dip" android:text="忘记密码" />
+        <EditText android:textSize="13.299988dip" android:textColorHint="@color/hint_text_color" android:id="@+id/update_pwd_new1" android:background="@drawable/bord_black" android:paddingLeft="11.699982dip" android:layout_width="fill_parent" android:layout_height="@dimen/dip47" android:layout_marginTop="10.0dip" android:hint="@string/t_updatepwd_new1_hint" android:singleLine="true" android:maxLength="16" android:inputType="textPassword" />
+        <EditText android:textSize="13.299988dip" android:textColorHint="@color/hint_text_color" android:id="@+id/update_pwd_new2" android:background="@drawable/bord_black" android:paddingLeft="11.699982dip" android:layout_width="fill_parent" android:layout_height="@dimen/dip47" android:layout_marginTop="29.0dip" android:hint="@string/t_updatepwd_new2_hint" android:singleLine="true" android:maxLength="16" android:inputType="textPassword" />
+        <com.gionee.aora.integral.gui.view.ImageVerificationView android:id="@+id/verify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip47" android:layout_marginTop="29.0dip" />
+        <Button android:textSize="20.0dip" android:textColor="@color/white" android:id="@+id/updatepwdok" android:background="@drawable/btn_green_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip53" android:layout_marginTop="50.0dip" android:text="@string/title_updatepwd" />
+    </LinearLayout>
+</ScrollView>

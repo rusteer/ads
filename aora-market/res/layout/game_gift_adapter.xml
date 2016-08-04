@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:layout_width="@dimen/soft_icon_size" android:layout_height="wrap_content" android:minWidth="@dimen/soft_icon_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/game_gift_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:src="@drawable/cp_defaulf" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/set_title_color" android:ellipsize="end" android:gravity="center" android:id="@+id/game_gift_name" android:layout_width="@dimen/dip70" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="易用汇" android:singleLine="true" android:layout_below="@id/game_gift_icon" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/set_title_color" android:ellipsize="end" android:gravity="center" android:id="@+id/game_gift_info" android:layout_width="@dimen/dip70" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="新手礼包" android:singleLine="true" android:layout_below="@id/game_gift_name" />
+</RelativeLayout>

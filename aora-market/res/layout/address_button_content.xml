@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dip" android:textColor="@color/black" android:id="@+id/curr_coin_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:drawableLeft="@drawable/manager_center_coin_large" android:drawablePadding="5.0dip" />
+    <ImageView android:id="@+id/integral_exchange_menu_btn" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:src="@drawable/title_three_dots" />
+</LinearLayout>

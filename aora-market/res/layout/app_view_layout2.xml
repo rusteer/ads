@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/soft_icon_size" android:layout_height="wrap_content" android:minWidth="@dimen/soft_icon_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/app_view_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:src="@drawable/cp_defaulf" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/set_title_color" android:gravity="center_horizontal" android:id="@+id/app_view_name" android:layout_width="@dimen/dip70" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="刀锋战士" android:singleLine="true" android:layout_below="@id/app_view_icon" />
+</RelativeLayout>

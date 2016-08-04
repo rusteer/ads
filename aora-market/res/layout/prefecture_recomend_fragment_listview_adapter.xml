@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="188.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/prefecture_recoment_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="致我们终将逝去的青春" android:singleLine="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/prefecture_info_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_below="@id/prefecture_recoment_name">
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@+id/prefecture_recoment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动时间:4月25日" android:singleLine="true" />
+        <View android:background="@color/black" android:layout_width="1.0dip" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/dip7" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@+id/prefecture_recoment_browse_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip7" android:text="10000" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/browse_times" />
+    </LinearLayout>
+    <ImageView android:id="@+id/prefecture_recoment_icon" android:layout_width="fill_parent" android:layout_height="130.6dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ad_default_banner" android:scaleType="fitXY" android:layout_below="@id/prefecture_info_lay" />
+    <TextView android:textColor="#ff333333" android:id="@+id/prefecture_describle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:text="专题描述专题描述专题描述专题描述专题描述专题描述" android:singleLine="true" android:layout_below="@id/prefecture_recoment_icon" />
+    <com.gionee.aora.market.gui.special.view.PrefectureRecomendAppLayout android:id="@+id/prefecture_app_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/prefecture_describle" />
+    <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/prefecture_app_layout" />
+</RelativeLayout>

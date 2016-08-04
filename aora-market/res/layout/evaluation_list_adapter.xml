@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="188.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@+id/exercise_top_split_line" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/exercise_top_split_line">
+        <ImageView android:id="@+id/eva_item_img" android:layout_width="fill_parent" android:layout_height="130.6dip" android:src="@drawable/ad_default_banner" android:scaleType="fitXY" />
+        <TextView android:textSize="16.599976dip" android:textColor="#ff272727" android:ellipsize="end" android:id="@+id/eva_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="魔物狩猎者，评测:多种元素的卡牌新作" android:singleLine="true" android:layout_below="@id/eva_item_img" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_below="@id/eva_item_name">
+            <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:id="@+id/eva_item_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="作者: 胡雪兰" android:singleLine="true" />
+            <View android:background="#ff525252" android:layout_width="1.0dip" android:layout_height="13.299988dip" android:layout_marginLeft="3.0dip" />
+            <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:id="@+id/eva_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="日期: 2013-12-12" android:singleLine="true" />
+            <View android:background="#ff525252" android:layout_width="1.0dip" android:layout_height="13.299988dip" android:layout_marginLeft="3.0dip" />
+            <TextView android:textSize="13.299988dip" android:textColor="#ff525252" android:id="@+id/eva_item_brose_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="999次浏览" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

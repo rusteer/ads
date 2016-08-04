@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/base_left_1" android:background="@drawable/main_menu_list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dip74">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/base_left_no_update_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/left_1_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon" />
+                <TextView android:textSize="18.0dip" android:textColor="@color/left_txt_color" android:id="@+id/left_1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_menu_str_1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/base_left_have_update_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/main_menu_str_1" />
+                    <Button android:textSize="14.599976dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/base_left_1_mid_update_all_btn" android:background="@drawable/left_update_btn_selector" android:layout_width="86.599976dip" android:layout_height="30.0dip" android:layout_marginLeft="80.0dip" android:text="一键更新" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/left_update_up_point" />
+                <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/left_update_bg" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="88.599976dip">
+                    <TextView android:textSize="12.0dip" android:textColor="#ffc3c3c3" android:id="@+id/base_left_1_mid_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有6款应用苦待主上升级" />
+                    <ImageView android:id="@+id/base_left_1_bottom_icon1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/cp_defaulf" android:scaleType="fitXY" android:layout_below="@id/base_left_1_mid_text" />
+                    <ImageView android:id="@+id/base_left_1_bottom_icon2" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/cp_defaulf" android:scaleType="fitXY" android:layout_toRightOf="@+id/base_left_1_bottom_icon1" android:layout_below="@id/base_left_1_mid_text" />
+                    <ImageView android:id="@+id/base_left_1_bottom_icon3" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/cp_defaulf" android:scaleType="fitXY" android:layout_toRightOf="@+id/base_left_1_bottom_icon2" android:layout_below="@id/base_left_1_mid_text" />
+                    <ImageView android:id="@+id/base_left_1_bottom_icon4" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/cp_defaulf" android:scaleType="fitXY" android:layout_toRightOf="@+id/base_left_1_bottom_icon3" android:layout_below="@id/base_left_1_mid_text" />
+                    <ImageView android:id="@+id/base_left_1_bottom_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="28.0dip" android:src="@drawable/left_updte_more_img" android:layout_toRightOf="@+id/base_left_1_bottom_icon4" android:layout_below="@id/base_left_1_mid_text" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/base_left_0" android:background="@drawable/main_menu_list_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dip74" android:layout_below="@id/base_left_1">
+            <View android:background="@drawable/left_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+            <ImageView android:id="@+id/left_0_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/left_txt_color" android:id="@+id/left_0_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_menu_str_0" android:layout_toRightOf="@+id/left_0_icon" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/left_0_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/icon" android:layout_toRightOf="@+id/left_0_title" android:layout_centerVertical="true" />
+            <View android:background="@drawable/left_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/base_left_6" android:background="@drawable/main_menu_list_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dip74" android:layout_below="@id/base_left_0">
+            <ImageView android:id="@+id/left_6_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/left_txt_color" android:id="@+id/left_6_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_menu_str_9" android:layout_toRightOf="@+id/left_6_icon" android:layout_centerVertical="true" />
+            <View android:background="@drawable/left_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/base_left_3" android:background="@drawable/main_menu_list_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dip74" android:layout_below="@id/base_left_6">
+            <ImageView android:id="@+id/left_3_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/left_txt_color" android:id="@+id/left_3_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_menu_str_4" android:layout_toRightOf="@+id/left_3_icon" android:layout_centerVertical="true" />
+            <View android:background="@drawable/left_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/base_left_2" android:background="@drawable/main_menu_list_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dip74" android:layout_below="@id/base_left_3">
+            <ImageView android:id="@+id/left_2_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/left_txt_color" android:id="@+id/left_2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_menu_str_2" android:layout_toRightOf="@+id/left_2_icon" android:layout_centerVertical="true" />
+            <View android:background="@drawable/left_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/base_left_4" android:background="@drawable/main_menu_list_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dip74" android:layout_below="@id/base_left_2">
+            <ImageView android:id="@+id/left_4_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/left_txt_color" android:id="@+id/left_4_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_menu_str_5" android:layout_toRightOf="@+id/left_4_icon" android:layout_centerVertical="true" />
+            <View android:background="@drawable/left_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/base_left_5" android:background="@drawable/main_menu_list_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dip74" android:layout_below="@id/base_left_4">
+            <ImageView android:id="@+id/left_5_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/left_txt_color" android:id="@+id/left_5_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_menu_str_3" android:layout_toRightOf="@+id/left_5_icon" android:layout_centerVertical="true" />
+            <View android:background="@drawable/left_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/base_left_7" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip50" android:layout_below="@id/base_left_5" />
+    </RelativeLayout>
+</ScrollView>

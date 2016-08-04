@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/my_lenjoy_popuwindow_lay" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/my_lenjoy_toast_lay" android:layout_width="fill_parent" android:layout_height="75.399994dip">
+        <LinearLayout android:gravity="center" android:background="@drawable/progress_go2" android:layout_width="fill_parent" android:layout_height="58.0dip">
+            <TextView android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/my_lenjoy_toast_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="提示" android:maxLines="2" />
+        </LinearLayout>
+        <ImageView android:layout_width="17.299988dip" android:layout_height="8.599976dip" android:layout_marginLeft="21.0dip" android:src="@drawable/toast_point" />
+    </LinearLayout>
+</LinearLayout>

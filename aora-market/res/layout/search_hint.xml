@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/information_listitem" android:background="@drawable/search_hint_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="40.0dip" android:minHeight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp14" android:textColor="#ff3f3f3f" android:gravity="center_vertical" android:id="@+id/searchHintText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.599976dip" android:text="愤怒的小鸟" android:singleLine="true" android:layout_centerVertical="true" />
+</RelativeLayout>

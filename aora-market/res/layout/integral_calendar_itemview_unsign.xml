@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fffcfcfc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@+id/integral_calendar_item_week_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周一" android:singleLine="true" />
+    <ImageView android:layout_width="27.0dip" android:layout_height="12.0dip" android:layout_marginTop="13.299988dip" android:src="@drawable/integral_calendar_unsign_face" android:scaleType="center" />
+</LinearLayout>

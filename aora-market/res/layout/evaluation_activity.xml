@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/eva_info_lay" android:background="@drawable/list_item_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/soft_item_height" android:layout_alignParentBottom="true">
+        <com.gionee.aora.market.gui.download.view.DownloadProgressButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/eva_download_lay" android:background="@drawable/download_button_layout_bg" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/eva_app_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="18.299988dip" android:src="@drawable/icon" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@+id/eva_download_lay" android:layout_toRightOf="@+id/eva_app_icon" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@+id/eva_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="糖果传奇" android:singleLine="true" android:layout_toLeftOf="@+id/eva_download_lay" android:layout_toRightOf="@+id/eva_app_icon" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.599976dip" android:textColor="#ff525252" android:id="@+id/eva_app_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="5.6MB" android:layout_below="@id/eva_app_name" android:layout_alignLeft="@+id/eva_app_name" />
+            <View android:id="@+id/eva_app_line" android:background="#ff525252" android:layout_width="1.0dip" android:layout_height="12.599976dip" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@+id/eva_app_size" android:layout_alignBottom="@id/eva_app_size" />
+            <TextView android:textSize="12.599976dip" android:textColor="#ff525252" android:id="@+id/eva_app_download_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="99999万次下载" android:layout_toRightOf="@+id/eva_app_line" android:layout_alignBottom="@id/eva_app_line" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <WebView android:id="@+id/eva_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/eva_info_lay" android:layout_alignParentLeft="true" />
+</RelativeLayout>

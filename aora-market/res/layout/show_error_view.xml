@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/retry_integral_layout" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/show_error_img" android:background="@drawable/no_download_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/show_error_img" android:layout_centerHorizontal="true">
+        <TextView android:textSize="15.0sp" android:textColor="#ffaaaaaa" android:id="@+id/show_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="当前没有下载任务哦" />
+        <Button android:textSize="15.0sp" android:textColor="#ff2e975d" android:id="@+id/show_error_retry" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="点击刷新" />
+    </LinearLayout>
+</RelativeLayout>

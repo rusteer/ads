@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="20.0dip" android:textColor="#ffff8e3b" android:id="@+id/necessary_install_all_btn" android:background="@drawable/list_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="65.0dip" android:text="一键安装(62.5MB)" android:layout_alignParentBottom="true" />
+    <com.gionee.aora.market.gui.view.MarketExpandListView android:scrollbarStyle="outsideOverlay" android:id="@+id/necessaryExpandListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:childDivider="@drawable/driver_color" android:divider="@null" android:layout_above="@+id/necessary_install_all_btn" />
+</RelativeLayout>

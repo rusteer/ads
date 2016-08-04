@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/other_listitem" android:background="@drawable/search_hint_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/historyLayout" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="@dimen/sp14" android:textColor="#ff3f3f3f" android:ellipsize="end" android:id="@+id/searchResult" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.599976dip" android:text="植物大战僵尸" android:singleLine="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:paddingTop="34.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingBottom="34.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@+id/person_sex_iv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sex_woman" android:layout_centerHorizontal="true" />
+        <CheckBox android:textSize="16.699982dip" android:textColor="@color/ranktop" android:id="@+id/person_woman" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:checked="false" android:button="@drawable/person_checkbox_selector" android:text="妹子" android:layout_below="@id/person_sex_iv1" android:layout_alignLeft="@+id/person_sex_iv1" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingBottom="34.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@+id/person_sex_iv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sex_man" android:layout_centerHorizontal="true" />
+        <CheckBox android:textSize="16.699982dip" android:textColor="@color/ranktop" android:id="@+id/person_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:checked="false" android:button="@drawable/person_checkbox_selector" android:text="汉子" android:layout_below="@id/person_sex_iv2" android:layout_alignLeft="@+id/person_sex_iv2" />
+    </RelativeLayout>
+</LinearLayout>

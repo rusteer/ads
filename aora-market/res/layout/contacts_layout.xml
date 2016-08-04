@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.call.view.ClearEditText android:textSize="12.0dip" android:gravity="center_vertical" android:id="@+id/contacts_search" android:background="@drawable/contacts_search_bg" android:paddingLeft="13.299988dip" android:layout_width="fill_parent" android:layout_height="33.299988dip" android:layout_margin="10.0dip" android:hint="姓名首字母组合、数字搜索" android:singleLine="true" android:drawableLeft="@drawable/contacts_search_" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/contacts_search">
+        <ListView android:layout_gravity="center" android:id="@+id/contacts_" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+        <TextView android:textColor="#ff454545" android:gravity="center_vertical" android:layout_gravity="top|right|center" android:id="@+id/contacts_no" android:background="@color/main_bg" android:paddingLeft="13.299988dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="没有匹配的联系人" />
+        <LinearLayout android:layout_gravity="top|right|center" android:orientation="vertical" android:id="@+id/contacts_title_layout" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="22.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@+id/contacts_title_layout_catalog" android:paddingLeft="13.299988dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="A" />
+        </LinearLayout>
+        <com.gionee.aora.market.gui.call.view.SideBar android:layout_gravity="right|center" android:id="@+id/contacts_sidrbar" android:layout_width="30.0dip" android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

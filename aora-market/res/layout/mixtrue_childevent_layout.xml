@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:padding="13.299988dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:id="@+id/mix_event_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="活动标题" android:singleLine="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="170.0dip" android:layout_below="@id/mix_event_title">
+        <ImageView android:id="@+id/mix_event_image" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="124.0dip" android:src="@drawable/ad_default_banner" android:scaleType="fitXY" />
+        <ImageView android:id="@+id/mix_event_icon" android:background="@drawable/imageround" android:layout_width="@dimen/dip57" android:layout_height="@dimen/dip57" android:src="@drawable/cp_defaulf" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.299988dip" android:layout_toRightOf="@+id/mix_event_icon" android:layout_below="@id/mix_event_image">
+            <TextView android:textSize="16.0dip" android:textColor="@color/set_title_color" android:id="@+id/mix_event_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AppName" android:singleLine="true" android:layout_toLeftOf="@+id/mix_event_button" android:layout_centerVertical="true" />
+            <com.gionee.aora.market.gui.download.view.DownloadProgressButton android:textSize="12.0dip" android:gravity="center" android:id="@+id/mix_event_button" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

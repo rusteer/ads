@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="50.0dip" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android_custom="http://schemas.android.com/apk/res/com.gionee.aora.market">
+    <FrameLayout android:layout_width="70.0dip" android:layout_height="70.0dip">
+        <com.gionee.aora.market.gui.view.RoundProgressBar android:id="@+id/kill_process_round_progress" android:layout_width="70.0dip" android:layout_height="70.0dip" android_custom:roundColor="#ff359b63" android_custom:roundProgressColor="#ffffffff" android_custom:roundWidth="10.0dip" />
+        <RelativeLayout android:id="@+id/text_layer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ln_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="10.5dip" android:textColor="#ff359b63" android:id="@+id/keyong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用" android:layout_centerInParent="true" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff359b63" android:id="@+id/progress_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.5dip" android:text="80" android:layout_centerInParent="true" />
+            </LinearLayout>
+            <TextView android:textSize="9.0dip" android:textColor="#ff359b63" android:id="@+id/percent_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-3.0dip" android:layout_marginBottom="2.0dip" android:text="%" android:layout_toRightOf="@+id/ln_center" android:layout_alignBottom="@id/ln_center" />
+            <TextView android:textSize="8.0dip" android:textColor="#ff9c9c9c" android:id="@+id/remain_mem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.5dip" android:text="1.1G" android:layout_below="@id/ln_center" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0dip" android:textColor="#ff359b63" android:gravity="center" android:id="@+id/finish_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="已达\n最佳" />
+    </FrameLayout>
+    <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@+id/kill_process_btn" android:background="@drawable/download_1_bg" android:layout_width="120.0dip" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:text="一键加速" />
+</merge>

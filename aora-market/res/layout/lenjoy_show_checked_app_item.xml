@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="58.599976dip" android:layout_height="58.599976dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="58.599976dip" android:layout_height="58.599976dip" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/lenjoy_show_checked_app_icon" android:layout_width="42.299988dip" android:layout_height="42.299988dip" android:src="@drawable/cp_defaulf" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

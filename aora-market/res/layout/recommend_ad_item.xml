@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/commend_icon" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ad_default_banner" android:scaleType="fitXY" />
+    <TextView android:textColor="@*android:color/white" android:gravity="left|center" android:id="@+id/commend_text" android:background="#bb000000" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginBottom="3.0dip" android:singleLine="true" android:layout_alignBottom="@id/commend_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

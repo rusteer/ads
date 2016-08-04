@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="68.29999dip">
+        <ImageView android:id="@+id/net_error_dialog_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="16.299988dip" android:src="@drawable/icon" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <Button android:textSize="16.0dip" android:textColor="#ff000000" android:id="@+id/net_error_dialog_upgreade_btn" android:background="@drawable/integral_getmoney_recordbtn_selector" android:layout_width="65.29999dip" android:layout_height="25.299988dip" android:layout_marginRight="18.0dip" android:text="升级" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@+id/net_error_dialog_upgreade_btn" android:layout_toRightOf="@+id/net_error_dialog_icon">
+            <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@+id/net_error_dialog_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保卫萝卜2" android:singleLine="true" />
+            <TextView android:textSize="12.599976dip" android:textColor="#ff525252" android:id="@+id/net_error_dialog_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="49.5MB" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

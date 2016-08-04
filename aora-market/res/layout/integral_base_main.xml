@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.integral.gui.view.IntegralChildTitleView android:id="@+id/baseMarketTitleBarView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@+id/baseCenterView" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/baseMarketTitleBarView" />
+    <RelativeLayout android:id="@+id/baseLoadingView" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/baseMarketTitleBarView">
+        <com.gionee.aora.integral.gui.view.LoadingNewView1 android:id="@+id/integral_base_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在努力加载中..." android:layout_below="@id/integral_base_loading_view" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/baseErrorView" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/baseMarketTitleBarView" />
+</RelativeLayout>

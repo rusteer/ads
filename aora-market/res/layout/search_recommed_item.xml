@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/search_recommed_item_bg_layout" android:background="@drawable/search_recommed_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="@color/softlist_new_txt_color" android:ellipsize="end" android:gravity="top" android:id="@+id/search_recommed_item_recommendby_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:text="根据Kindom.rush为您推荐" android:lines="2" />
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/soft_icon_size" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+        <ImageView android:id="@+id/search_recommed_item_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:src="@drawable/cp_defaulf" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff525252" android:gravity="center" android:id="@+id/search_recommed_item_appname_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="鳄鱼" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

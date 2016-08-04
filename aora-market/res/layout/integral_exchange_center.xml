@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <Button android:textSize="12.5dip" android:id="@+id/exchange_record" android:background="@drawable/integral_getmoney_recordbtn_selector" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="兑换记录" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TableLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:shrinkColumns="0" android:layout_toLeftOf="@+id/exchange_record">
+            <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="39.0dip">
+                <TextView android:textSize="13.0dip" android:textColor="#ff1c1c1c" android:gravity="center_vertical" android:id="@+id/username_tv" android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginLeft="10.0dip" android:text="测试账号测试测" android:singleLine="true" />
+                <TextView android:textSize="13.0dip" android:textColor="#ff1c1c1c" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:text="金币:" android:singleLine="true" />
+                <TextView android:textSize="13.0dip" android:textColor="#ffff7200" android:gravity="center_vertical" android:id="@+id/curr_coin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="16688888" android:singleLine="true" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    <GridView android:id="@+id/grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:numColumns="2" />
+</LinearLayout>

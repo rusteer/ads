@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:wei="http://schemas.android.com/apk/res/com.gionee.aora.market">
+    <ImageView android:id="@+id/recommend_ad_icon" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ad_default_banner" android:scaleType="fitXY" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/banner_frame" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@+id/recommend_ad_lenjoy" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gionee.aora.market.gui.view.CircleCornerImageView android:id="@+id/recommend_ad_lenjoy_icon" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_above="@+id/recommend_ad_lenjoy_surname" android:layout_centerHorizontal="true" wei:borderWidth="1.0dip" wei:borderColor="#ffffffff" wei:type="circle" wei:src="@drawable/integral_main_usericon" />
+        <TextView android:textSize="13.0dip" android:textColor="@*android:color/white" android:id="@+id/recommend_ad_lenjoy_surname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dip3" android:text="本周之星" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

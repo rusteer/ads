@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gionee.aora.market.gui.experience.view.PullDownListView android:id="@+id/experience_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gionee.aora.market.gui.experience.view.StaggeredGridView android:id="@+id/experience_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/experience_view_title" app:column_count_portrait="2" app:column_count_landscape="2" app:item_margin="6.6999817dip" />
+    </com.gionee.aora.market.gui.experience.view.PullDownListView>
+</RelativeLayout>

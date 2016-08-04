@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.aora.market.gui.view.ChildTitleView android:id="@+id/feedbackTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@+id/listview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.299988dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/feed_back_edittext_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="13.299988dip">
+        <EditText android:textSize="14.599976dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@+id/feedback_edit" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请描述你的问题" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:textColor="#ffffffff" android:gravity="center" android:id="@+id/feedback_refer" android:background="@drawable/feed_back_commit_button_bg" android:layout_width="66.69998dip" android:layout_height="fill_parent" android:text="@string/feedback_refer" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/soft_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/soft_item_height" android:layout_alignParentLeft="true">
+        <ImageView android:id="@+id/soft_icon" android:layout_width="@dimen/soft_icon_size" android:layout_height="@dimen/soft_icon_size" android:layout_marginLeft="10.0dip" android:src="@drawable/cp_defaulf" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="160.0dip" android:layout_height="fill_parent" android:layout_marginLeft="13.299988dip" android:layout_toRightOf="@+id/soft_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/sp14" android:textStyle="bold" android:textColor="@color/set_title_color" android:id="@+id/soft_name" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="易用汇" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="@dimen/sp11" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/manage_soft_version" android:singleLine="true" />
+                <TextView android:textSize="@dimen/sp11" android:textColor="@color/gray" android:id="@+id/soft_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/unknow" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="13.0dip" android:textColor="#ff9c9c9c" android:id="@+id/uninstall_layout" android:background="@drawable/download_gray" android:focusable="true" android:layout_width="@dimen/download_button_width" android:layout_height="@dimen/download_button_height" android:layout_margin="9.0dip" android:text="@string/uninstall" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/get_money_rank_btn" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/integral_rank" android:scaleType="centerInside" />
+    <ImageView android:id="@+id/get_money_note_btn" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:src="@drawable/integral_notebook" android:scaleType="centerInside" />
+</LinearLayout>

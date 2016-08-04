@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@+id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <SurfaceView android:layout_gravity="center" android:id="@+id/preview_mask" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <com.google.zxing.client.android.ViewfinderView android:id="@+id/viewfinder_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:id="@+id/result_view" android:background="@color/result_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/standard_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/barcode_image_view" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/half_padding" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="160.0dip" android:maxHeight="160.0dip" />
+            <TextView android:textSize="22.0sp" android:textColor="@color/result_text" android:textColorLink="@color/result_text" android:autoLink="web" android:id="@+id/contents_text_view" android:paddingLeft="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#a0000000" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@+id/title_back_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="返回" android:drawableLeft="@drawable/qr_title_back_bg" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SeekBar android:id="@+id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</merge>
